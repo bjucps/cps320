@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ImageDemo"
+             x:Class="ImageDemo.MainPage">
+
+    <StackLayout>
+        <Label Text="Image loaded from XAML" />
+        <Image Source="{local:ImageResource ImageDemo.images.baby.png}" />
+        <Label Text="Image loaded from C#" />
+        <Image x:Name="MyImg" />
+    </StackLayout>
+</ContentPage>
