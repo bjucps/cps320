@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataBindingDemos.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Data Binding Demos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="20">
+            <Label Text="The following slider is bound to the entry box..." />
+            <StackLayout Orientation="Horizontal">
+                <Entry 
+                    Text="{Binding Value,Source={x:Reference mySlider}}"
+                    WidthRequest="100"
+                    FontSize="Large" />
+                <Slider 
+                    x:Name="mySlider" 
+                    Maximum="40"                         
+                    Minimum="0" 
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+
+            <Button Text="Model View Demo" Clicked="ModelViewDemo_Clicked" />
+
+            <Button Text="Model View 2 Demo" Clicked="ModelViewDemo2_Clicked" />
+
+            <Button Text="Model View ViewModel Demo" Clicked="ModelViewViewModelDemo_Clicked" />
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

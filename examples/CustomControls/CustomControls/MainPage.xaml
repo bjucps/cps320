@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:CustomControls"
+             x:Class="CustomControls.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="20" CornerRadius="0">
+            <Label Text="Welcome to Custom Controls!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="20">
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <!-- Ok -->
+                <Frame Grid.Column="0"
+                    Margin="0,20,0,0"
+                    CornerRadius="30"
+                    HasShadow="False"
+                    BackgroundColor="#3782f6">
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Ok_Tapped" />
+                    </Frame.GestureRecognizers>
+                    
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                        <Label Text="&#x2713;" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" />
+                        <Label Text="Ok" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Cancel -->
+                <Frame Grid.Column="1"
+                    Margin="0,20,0,0"
+                    CornerRadius="30"
+                    HasShadow="False"
+                    BackgroundColor="#3782f6">
+                    
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Cancel_Tapped" />
+                    </Frame.GestureRecognizers>
+                    
+                    <StackLayout 
+                        Orientation="Horizontal"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                        <Label Text="&#x00d7;" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" />
+                        <Label Text="Cancel" FontSize="Large" TextColor="White" VerticalOptions="CenterAndExpand" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+        </StackLayout>
+        
+        <!-- Custom Control -->
+        <controls:FrameButton 
+            Text="Hello" 
+            IconText="&#x1f600;"
+            Margin="30"
+            Clicked="Hello_Clicked" />
+    </StackLayout>
+
+</ContentPage>

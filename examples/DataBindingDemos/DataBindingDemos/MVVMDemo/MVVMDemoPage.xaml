@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:DataBindingDemos.MVVMDemo"
+             x:DataType="ViewModels:ProductViewModel"
+             x:Class="DataBindingDemos.MVVMDemo.MVVMDemoPage">
+
+    <StackLayout Padding="30">
+        <Label Text="MVVMDemo" FontSize="Large" Margin="0,0,0,20" />
+
+        <Label Text="Product Description" />
+        <Entry x:Name="DescriptionEntry" Text="{Binding Description}" />
+        <Label Text="Price" />
+        <Entry x:Name="PriceEntry" Text="{Binding Price}" Keyboard="Numeric" />
+
+        <Button Text="Validate" Clicked="Validate_Clicked" />
+
+        <Label Text="{Binding Message}" TextColor="{Binding MessageColor}" />
+
+        <Label Text="ViewModel Data" FontSize="Medium" Margin="0,20,0,10" />
+
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="Description:" />
+            <Label Text="{Binding Description}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+            <Label Text="Price:" />
+            <Label Text="{Binding Price}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+            <Label Text="Message:" />
+            <Label Text="{Binding Message}" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

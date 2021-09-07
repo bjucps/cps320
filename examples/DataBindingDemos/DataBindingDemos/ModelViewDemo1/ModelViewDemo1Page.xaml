@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:DataBindingDemos.ModelViewDemo1"
+             x:DataType="Models:Product"
+             x:Class="DataBindingDemos.ModelViewDemo1.ModelViewDemo1Page">
+    
+    <StackLayout Padding="30">
+        <Label Text="Model View Demo" FontSize="Large" Margin="0,0,0,20" />
+
+        <Label Text="Product Description" />
+        <Entry x:Name="DescriptionEntry" />
+        <Label Text="Price" />
+        <Entry x:Name="PriceEntry" Keyboard="Numeric" />
+
+        <Button Text="Validate" Clicked="Validate_Clicked" />
+
+        <Label x:Name="ResultLabel" />
+
+        <Label Text="Model Data" FontSize="Medium" Margin="0,20,0,10" />
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Description:" />
+            <Label x:Name="DescriptionLabel" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Price:" />
+            <Label x:Name="PriceLabel" />
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

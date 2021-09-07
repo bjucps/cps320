@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DynamicControls.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Dynamic Controls" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="20">
+            <Button Text="Make more buttons" Clicked="MakeMore_Clicked" />
+            
+            <!-- Dynamically created buttons are added to the following layout -->
+            <StackLayout 
+                x:Name="MyLayout"
+                Orientation="Horizontal" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
