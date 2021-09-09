@@ -32,13 +32,6 @@ namespace DataBindingDemos.MVVMDemo
             set => SetProperty(ref _message, value);
         }
 
-        private Color _messageColor;
-        public Color MessageColor
-        {
-            get => _messageColor;
-            set => SetProperty(ref _messageColor, value);
-        }
-
         public ProductViewModel(Product product)
         {
             this.product = product;
@@ -56,15 +49,16 @@ namespace DataBindingDemos.MVVMDemo
             catch (Exception e)
             {
                 Message = "Invalid price!";
-                MessageColor = Color.Red;
+                //MessageColor = Color.Red;
                 return false;
             }
 
             Message = "Looks good!";
-            MessageColor = Color.Green;
+            //MessageColor = Color.Green;
 
             product.Description = Description;
             product.Price = Convert.ToDouble(Price);
+
             return true;
         }
 

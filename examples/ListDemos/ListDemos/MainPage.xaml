@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListDemos.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Collection Demos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Padding="30">
+            <Button Text="ListDemo1" Clicked="ListDemo1_Clicked" />
+            <Button Text="ListDemo2" Clicked="ListDemo2_Clicked" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

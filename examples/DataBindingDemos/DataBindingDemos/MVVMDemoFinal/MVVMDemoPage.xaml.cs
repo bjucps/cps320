@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace DataBindingDemos.MVVMDemo
+namespace DataBindingDemos.MVVMDemoFinal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MVVMDemoPage : ContentPage
     {
+        ProductViewModel viewModel;
 
         public MVVMDemoPage()
         {
@@ -21,12 +22,13 @@ namespace DataBindingDemos.MVVMDemo
                 Description = "Steinway 9-foot Concert Grand",
                 Price = 180000
             };
-
+            viewModel = new ProductViewModel(product);
+            BindingContext = viewModel;
         }
 
         private void Validate_Clicked(object sender, EventArgs e)
         {
-            
+            viewModel.Validate();
         }
     }
 }

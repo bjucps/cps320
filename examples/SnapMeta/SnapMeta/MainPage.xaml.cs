@@ -38,6 +38,12 @@ namespace SnapMeta
                 // Update image metadata
                 var image = ImageFile.FromFile(imageFilename);
 
+                var datetime = image.Properties.Get<ExifDateTime>(ExifTag.DateTimeOriginal);
+                string make = image.Properties.Get(ExifTag.Make).ToString();
+
+                Debug.WriteLine("Original image date/time:" + datetime);
+                Debug.WriteLine("Original image camera make:" + make);
+
                 image.Properties.Set(ExifTag.DateTimeOriginal, new DateTime(2001, 9, 11));
                 image.Properties.Set(ExifTag.Make, "Schaub");
                 image.Properties.Set(ExifTag.Model, "The Fancy Camera");
