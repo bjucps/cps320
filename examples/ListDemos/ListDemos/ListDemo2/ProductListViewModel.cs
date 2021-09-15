@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
-namespace ListDemos
+namespace ListDemos.ListDemo2
 {
     class ProductListViewModel
     {
@@ -13,16 +15,12 @@ namespace ListDemos
 
         public ProductListViewModel()
         {
-            try
+            Products = new List<ProductViewModel>();
+            foreach (Product p in ProductCollection.Instance.Items)
             {
-                Products = ProductCollection.Instance.Items
-                    .Select(product => new ProductViewModel(product))
-                    .ToList();
-
-            } catch (Exception e)
-            {
-                Debug.WriteLine(e);
+                Products.Add(new ProductViewModel(p));
             }
+
         }
 
     }

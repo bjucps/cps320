@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -16,16 +16,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ListDemo2Page.xaml.cs">
+    <Compile Update="ListDemo2\ListDemo2Page.xaml.cs">
       <DependentUpon>ListDemo2Page.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="ListDemo1Page.xaml">
+    <EmbeddedResource Update="ListDemo1\ListDemo1Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ListDemo2Page.xaml">
+    <EmbeddedResource Update="ListDemo2\ListDemo2Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListDemo3\ListDemo3Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ProductDetailPage.xaml">

@@ -11,6 +11,7 @@
         <StackLayout Padding="30">
             <Button Text="ListDemo1" Clicked="ListDemo1_Clicked" />
             <Button Text="ListDemo2" Clicked="ListDemo2_Clicked" />
+            <Button Text="ListDemo3" Clicked="ListDemo3_Clicked" />
         </StackLayout>
     </StackLayout>
 

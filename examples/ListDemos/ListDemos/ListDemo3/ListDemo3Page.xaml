@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:ListDemos"
+             xmlns:Demo2Models="clr-namespace:ListDemos.ListDemo3"
+             x:DataType="Demo2Models:ProductListViewModel"
+             x:Class="ListDemos.ListDemo3.ListDemo3Page">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Products" 
+                   TextColor="White" 
+                   FontSize="Large" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand" />
+            <Label Text="+" 
+                   TextColor="White" 
+                   FontSize="30" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="End" 
+                   Margin="0,0,20,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AddItemCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout>
+        <ListView 
+            x:Name="ItemsListView"
+            RowHeight="60"
+            ItemsSource="{Binding Products.TargetCollection}"
+            ItemTapped="ItemsListView_ItemTapped"
+            SelectionMode="None">
+
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="Models:ProductViewModel">
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Description}" FontAttributes="Bold" />
+                            <Label Text="{Binding FormattedPrice}" TextColor="{Binding Color}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </StackLayout>
+
+
+</ContentPage>

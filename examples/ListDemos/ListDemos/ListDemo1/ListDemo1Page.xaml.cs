@@ -7,21 +7,22 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ListDemos
+namespace ListDemos.ListDemo1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ListDemo2Page : ContentPage
+    public partial class ListDemo1Page : ContentPage
     {
-        public ListDemo2Page()
+        public ListDemo1Page()
         {
             InitializeComponent();
-            BindingContext = new ProductListViewModel();
+
+            ItemsListView.ItemsSource = ProductCollection.Instance.Items;
         }
 
         private void ItemsListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var product = e.Item as ProductViewModel;
-            var page = new ProductDetailPage(product.Product);
+            Product product = e.Item as Product;
+            var page = new ProductDetailPage(product);
             Navigation.PushAsync(page);
         }
     }

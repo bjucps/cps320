@@ -2,16 +2,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Models="clr-namespace:ListDemos"
-             x:DataType="Models:Product"
+             x:DataType="Models:ProductViewModel"
              x:Class="ListDemos.ProductDetailPage">
-    
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding Id, StringFormat='Product {0}'}" 
+                   TextColor="White" 
+                   FontSize="Large" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="StartAndExpand" />
+            <Label Text="&#x1f5d1;" 
+                   TextColor="White" 
+                   FontSize="30" 
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="End" 
+                   Margin="0,0,20,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="DeleteProduct_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
     <StackLayout Padding="30">
-        <Label Text="Product ID:" />
-        <Label Text="{Binding Id}" />
-        <Label Text="Product Description:" />
-        <Label Text="{Binding Description}" />
-        <Label Text="Product Price:" />
-        <Label Text="{Binding Price}" />
+        <Label Text="Description:" />
+        <Label Text="{Binding Description}" FontSize="Large" />
+        <Label Text="Price:" />
+        <Label Text="{Binding FormattedPrice}" FontSize="Large" />
+        <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+            <Label Text="Increase price by:" VerticalOptions="Center" />
+            <Entry x:Name="IncreaseAmount" Text="3" WidthRequest="40" />
+            <Button Text="Increase Price" Command="{Binding IncreasePriceCommand}" CommandParameter="{Binding Text,Source={x:Reference IncreaseAmount}}" />
+        </StackLayout>
+        
     </StackLayout>
     
 </ContentPage>

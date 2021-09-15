@@ -20,7 +20,20 @@ namespace ListDemos
         public ProductDetailPage(Product product)
         {
             InitializeComponent();
-            BindingContext = product;
+            BindingContext = new ProductViewModel(product);
         }
+
+        private void DeleteProduct_Tapped(object sender, EventArgs e)
+        {
+            var productVM = BindingContext as ProductViewModel;
+            ProductCollection.Instance.RemoveItem(productVM.Product);
+            Navigation.PopAsync();
+        }
+
+        //private void IncreasePrice_Clicked(object sender, EventArgs e)
+        //{
+        //    var product = BindingContext as Product;
+        //    product.Price += 1;
+        //}
     }
 }

@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace ListDemos
 {
-    class ProductViewModel
+    class ProductViewModel: BaseViewModel
     {
         public Product Product { get; }
+
+        public int Id => Product.Id;
 
         public string Description => Product.Description;
 
@@ -19,7 +23,15 @@ namespace ListDemos
             Product = product;
         }
 
+        public ICommand IncreasePriceCommand => new Command<string>( amount =>
+        {
+            Product.Price += Convert.ToDouble(amount);
+            OnPropertyChanged(nameof(FormattedPrice));
+        });
 
-
+        public void NotifyAll()
+        {
+            OnPropertyChanged("");
+        }
     }
 }

@@ -17,12 +17,17 @@ namespace ListDemos
 
         private void ListDemo1_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ListDemo1Page());
+            Navigation.PushAsync(new ListDemo1.ListDemo1Page());
         }
 
         private void ListDemo2_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ListDemo2Page());
+            Navigation.PushAsync(new ListDemo2.ListDemo2Page());
+        }
+
+        private void ListDemo3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListDemo3.ListDemo3Page());
         }
     }
 }
