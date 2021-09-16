@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalStorage.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="File Editor" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Filename:" />
+            <Entry x:Name="FilenameEntry" Text="myfile.txt" />
+            <Button Text="Load" Clicked="Load_Clicked" />
+            <Button Text="Save" Clicked="Save_Clicked" />
+        </StackLayout>
+        <Editor x:Name="TextEditor" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+</ContentPage>

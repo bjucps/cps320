@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LifecycleDemos.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Lifecycle Demos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Padding="10">
+            <Label Text="Enter your name:" />
+            <Entry x:Name="NameEntry" />
+            
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                <Button Text="Start Counting" Clicked="StartCounting_Clicked" />
+                <Button Text="Stop Counting" Clicked="StopCounting_Clicked" />
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Count:" />
+                <Label x:Name="CountLabel" />
+            </StackLayout>
+
+            <Button Text="Next Page" Clicked="NextPage_Clicked" Margin="0,20,0,0" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
