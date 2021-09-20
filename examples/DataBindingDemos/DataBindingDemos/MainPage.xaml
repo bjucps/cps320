@@ -28,6 +28,8 @@
 
             <Button Text="Model View ViewModel Demo" Clicked="ModelViewViewModelDemo_Clicked" />
 
+            <Button Text="Model View ViewModel Demo (Final)" Clicked="ModelViewViewModelDemoFinal_Clicked" />
+
         </StackLayout>
     </StackLayout>
 

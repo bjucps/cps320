@@ -1,7 +1,4 @@
-﻿using DataBindingDemos.ModelViewDemo1;
-using DataBindingDemos.ModelViewDemo2;
-using DataBindingDemos.MVVMDemo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -20,19 +17,25 @@ namespace DataBindingDemos
 
         private void ModelViewDemo_Clicked(object sender, EventArgs e)
         {
-            var page = new ModelViewDemo1Page();
+            var page = new ModelViewDemo1.ModelViewDemo1Page();
             Navigation.PushAsync(page);
         }
 
         private void ModelViewDemo2_Clicked(object sender, EventArgs e)
         {
-            var page = new ModelViewDemo2Page();
+            var page = new ModelViewDemo2.ModelViewDemo2Page();
             Navigation.PushAsync(page);
         }
 
         private void ModelViewViewModelDemo_Clicked(object sender, EventArgs e)
         {
-            var page = new MVVMDemoPage();
+            var page = new MVVMDemo.MVVMDemoPage();
+            Navigation.PushAsync(page);
+        }
+
+        private void ModelViewViewModelDemoFinal_Clicked(object sender, EventArgs e)
+        {
+            var page = new MVVMDemoFinal.MVVMDemoPage();
             Navigation.PushAsync(page);
         }
     }
