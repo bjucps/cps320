@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsyncDemos.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Async Demos!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Padding="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Search text:" VerticalOptions="Center" />
+                <Entry x:Name="SearchEntry" HorizontalOptions="FillAndExpand" />
+                <Button Text="Search" Clicked="Search_Clicked" />
+            </StackLayout>
+            <Label x:Name="SearchProgressLabel" />
+            <Label Text="Enter search text:" />
+            <Entry x:Name="LiveSearchEntry" TextChanged="LiveSearchEntry_TextChanged"/>
+            <ListView x:Name="MyListView" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
