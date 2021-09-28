@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace AsyncDemos
 {
@@ -40,7 +41,8 @@ namespace AsyncDemos
             return results;
         }
 
-        public async Task<List<string>> SearchWithFeedbackAsync(string text, Action<string> progress) {
+        public async Task<List<string>> SearchWithFeedbackAsync(string text, Action<string> progress)
+        {
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(SearchHandler)).Assembly;
             var results = new List<string>();
 
@@ -85,7 +87,7 @@ namespace AsyncDemos
                     {
                         progress($"Searched {count} records...");
                     }
-                    
+
                     //await Task.Delay(10000, token);
                     token.ThrowIfCancellationRequested();
                     if (line.Contains(text))
@@ -100,6 +102,46 @@ namespace AsyncDemos
             progress("Search ended");
 
             return results;
+        }
+
+
+        public Task<List<string>> SearchWithFeedbackAsyncRebooted(string text, Action<string> progress)
+        {
+            return Task.Run(() =>
+           {
+               var assembly = IntrospectionExtensions.GetTypeInfo(typeof(SearchHandler)).Assembly;
+               var results = new List<string>();
+
+               using (var rd = new StreamReader(assembly.GetManifestResourceStream("AsyncDemos.mywords.txt")))
+               {
+                   int count = 0;
+                   string line = rd.ReadLine();
+                   while (line != null)
+                   {
+                       if (count % 5 == 0)
+                       {
+                           Device.BeginInvokeOnMainThread(() =>
+                               progress($"Searched {count} records...")
+                           );
+                       }
+                       if (line.Contains(text))
+                       {
+                           results.Add(line);
+                       }
+                       line = rd.ReadLine();
+
+                       ++count;
+                       if (count % 5 == 0)
+                       {
+                           Console.WriteLine($"Searched {count} records...");
+                       }
+                   }
+               }
+
+               return results;
+           });
+
+
         }
 
     }

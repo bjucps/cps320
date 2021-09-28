@@ -8,6 +8,7 @@
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Button Text="Misbehave" Clicked="Misbehave_Clicked" />
+        <Button Text="Thread Demos" Clicked="ThreadDemos_Clicked" />
     </StackLayout>
 
 </ContentPage>

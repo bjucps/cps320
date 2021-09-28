@@ -25,17 +25,14 @@ namespace BackgroundWorkDemos
 
         private void BusyBackground_Clicked(object sender, EventArgs e)
         {
-            Task.Run(() =>
+            Task.Run(async () =>
            {
                int count = 0;
                while (true)
                {
                    ++count;
                    Console.WriteLine($"Still alive... count = {count}");
-                   for (int j = 0; j < 1000; ++j)
-                       for (int i = 0; i < 1000000; ++i)
-                           /* do nothing */
-                           ;
+                   await Task.Delay(1000);
                }
            });
         }

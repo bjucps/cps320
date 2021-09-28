@@ -56,7 +56,7 @@ namespace AsyncDemos
 
         private async void Search_Clicked(object sender, EventArgs e)
         {
-            MyListView.ItemsSource = await searchHandler.SearchAsync(SearchEntry.Text);
+           
             MyListView.ItemsSource = await searchHandler.SearchWithFeedbackAsync(SearchEntry.Text,
                 (string msg) =>
                 {

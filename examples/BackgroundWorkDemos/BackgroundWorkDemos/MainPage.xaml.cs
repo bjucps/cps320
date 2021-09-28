@@ -19,5 +19,10 @@ namespace BackgroundWorkDemos
         {
             Navigation.PushAsync(new MisbehavePage());
         }
+
+        private void ThreadDemos_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ThreadPage());
+        }
     }
 }
