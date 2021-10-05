@@ -10,6 +10,7 @@
         <Button Text="Login" Clicked="Login_Clicked" />
         <Button Text="Create Student" Clicked="CreateStudent_Clicked" />
         <Button Text="Display Students" Clicked="DisplayStudents_Clicked" />
+        <Button Text="Update Joe" Clicked="UpdateJoe_Clicked" />
 
         <ListView x:Name="StudentList" />
     </StackLayout>

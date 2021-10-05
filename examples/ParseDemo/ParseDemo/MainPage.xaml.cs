@@ -21,7 +21,7 @@ namespace ParseDemo
             try
             {
 
-                var stu = ParseClient.Instance.CreateObject<Student>();
+                Student stu = ParseClient.Instance.CreateObject<Student>();
                 stu.FirstName = "George" + new Random().Next(0, 10000);
                 stu.LastName = "Frederick";
                 await stu.SaveAsync();
@@ -43,8 +43,9 @@ namespace ParseDemo
         {
             try
             {
-
+                // Must login first...
                 var qry = ParseClient.Instance.GetQuery<Student>()
+                    //.WhereEqualTo("FirstName", "Joe")
                     .OrderBy(nameof(Student.FirstName));
 
                 var results = await qry.FindAsync();
@@ -59,6 +60,20 @@ namespace ParseDemo
             {
                 Console.WriteLine(ex);
             }
+        }
+
+        private async void UpdateJoe_Clicked(object sender, EventArgs e)
+        {
+            // Must login first...
+            var qry = ParseClient.Instance.GetQuery<Student>()
+                    .WhereEqualTo("FirstName", "Joe")
+                    .OrderBy(nameof(Student.FirstName));
+
+            Student result = await qry.FirstOrDefaultAsync();
+
+            result.LastName += "!";
+            await result.SaveAsync();
+            // await result.DeleteAsync();
         }
     }
 }

@@ -5,7 +5,7 @@ namespace ParseDemo
     [ParseClassName(nameof(Student))]
     public class Student : ParseObject
     {
-        [ParseFieldName(nameof(FirstName))]
+        [ParseFieldName("FirstName")]
         public string FirstName
         {
             get => GetProperty<string>();
