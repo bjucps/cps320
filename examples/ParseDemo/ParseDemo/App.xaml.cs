@@ -13,10 +13,12 @@ namespace ParseDemo
         {
             InitializeComponent();
 
+            ConfigureParse();
+
             MainPage = new MainPage();
         }
 
-        protected override void OnStart()
+        protected void ConfigureParse()
         {
             // Configure Parse Client
             ParseClient client = new ParseClient(new ServerConnectionData
@@ -40,6 +42,11 @@ namespace ParseDemo
             );
             client.AddValidClass<Student>();
             client.Publicize();
+        }
+
+        protected override void OnStart()
+        {
+            
 
         }
 

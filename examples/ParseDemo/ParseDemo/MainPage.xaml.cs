@@ -11,10 +11,19 @@ namespace ParseDemo
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();
+            
+            StudentList.RefreshCommand = new Command(
+                o => _ = DoRefresh(o)
+            );
+
+            _ = LoginAndLoadStudents();
+
         }
+
 
         private async void CreateStudent_Clicked(object sender, EventArgs e)
         {
@@ -33,35 +42,6 @@ namespace ParseDemo
             }
         }
 
-        private async void Login_Clicked(object sender, EventArgs e)
-        {
-            await ParseClient.Instance.LogInAsync("Test", "Test");
-
-        }
-
-        private async void DisplayStudents_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-                // Must login first...
-                var qry = ParseClient.Instance.GetQuery<Student>()
-                    //.WhereEqualTo("FirstName", "Joe")
-                    .OrderBy(nameof(Student.FirstName));
-
-                var results = await qry.FindAsync();
-                List<Student> students = results.ToList();
-                foreach (Student result in students)
-                {
-                    Console.WriteLine(result);
-                }
-                StudentList.ItemsSource = students;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-        }
-
         private async void UpdateJoe_Clicked(object sender, EventArgs e)
         {
             // Must login first...
@@ -74,6 +54,44 @@ namespace ParseDemo
             result.LastName += "!";
             await result.SaveAsync();
             // await result.DeleteAsync();
+        }
+
+        protected async Task LoginAndLoadStudents() { 
+            try
+            {
+                StudentList.IsRefreshing = true; // turn on list reload indicator, and prevent manual pull to refresh
+                await ParseClient.Instance.LogInAsync("Test", "Test");
+                await DoRefresh(StudentList);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Unable to login: " + e);
+            } 
+            finally
+            {
+                StudentList.IsRefreshing = false; 
+            }          
+        }
+
+        private async Task DoRefresh(object obj)
+        {
+            
+            try
+            {                
+                await Task.Delay(2000); // Introduce delay for demo; can remove this
+                var qry = ParseClient.Instance.GetQuery<Student>()
+                    .OrderBy(nameof(Student.FirstName));
+
+                StudentList.ItemsSource = await qry.FindAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            finally
+            {
+                StudentList.IsRefreshing = false;
+            }
         }
     }
 }
