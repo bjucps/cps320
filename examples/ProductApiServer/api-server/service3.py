@@ -1,29 +1,27 @@
+# To use this, 
+# pip install flask_sqlalchemy
+
 from flask import Flask, request, abort, jsonify, Response
 from werkzeug.exceptions import HTTPException
 import json
 import time
-from threading import Lock
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///products.sqlite3'
+db = SQLAlchemy(app)
 
-lock = Lock()
+# Define model class
+class Product(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    description = db.Column(db.String(80), nullable=False)
+    price = db.Column(db.Float, nullable=False)
 
-nextProductId = 0
+    def to_dict(self):        
+        # See https://stackoverflow.com/questions/7102754/jsonify-a-sqlalchemy-result-set-in-flask for a general solution
+        return { 'id': self.id, 'description': self.description, 'price': self.price}
 
-class Product:
-    def __init__(self, description: str, price: float):
-        global nextProductId
-        self.id = nextProductId
-        self.description = description
-        self.price = price
-        nextProductId += 1
-    def to_dict(self):
-        return  vars(self)
-
-product_db = [
-    Product("Dental Floss", .89),
-    Product("Olive Garden Salad Dressing", 2.50)
-]
+db.create_all() # Create tables from model classes
 
 # ----------------------------------------
 # Central error handler. 
@@ -47,8 +45,8 @@ def start_request():
 
 @app.route("/products", methods=['GET'])
 def product_list():
-    products = [product.to_dict() for product in product_db]
-    return jsonify(products)
+    products = Product.query.all()
+    return jsonify([product.to_dict() for product in products])
 
 @app.route("/products", methods=['POST'])
 def create_product():
@@ -60,27 +58,22 @@ def create_product():
             abort(400, description=f'Price may not be negative.')
     except Exception as e:
         abort(400, description=f'Invalid request: {e}')
-    
 
-    with lock:
-        matching_products = [p for p in product_db
-                             if p.description == desc]
-        if len(matching_products) == 1:
-            abort(400, description=f'Duplicate description.')
-
-        p = Product(desc, price)
-        product_db.append(p)
+    p = Product(description=desc, price=price)
+    db.session.add(p)
+    db.session.commit()
         
     return jsonify(p.to_dict())
 
 @app.route("/products/<int:product_id>", methods=['DELETE'])
 def delete_product(product_id: int):
-    for (inx, item) in enumerate(product_db):
-        if item.id == product_id:
-            product_db.pop(inx)
-            return ''
-
-    abort(404, description=f'No product with id {product_id} exists.')
+    p = Product.query.filter_by(id=product_id).first()
+    if p:
+        db.session.delete(p)
+        db.session.commit()
+        return ''
+    else:
+        abort(404, description=f'No product with id {product_id} exists.')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", debug=True)
