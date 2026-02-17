@@ -1,0 +1,26 @@
+{% extends "icecream/index.html" %}
+{% load i18n %}
+{% load static %}
+{% block nav-breadcrumbs %}
+  <nav aria-label="{% translate 'Breadcrumbs' %}">
+    <div class="breadcrumbs">
+      <a href="{% url 'index' %}">{% translate 'Home' %}</a>
+       / <a href="{% url 'admin:index' %}">{% translate 'Administration' %}</a>
+    </div>
+  </nav>
+{% endblock %}
+  
+{% block sidebar %}<h3>{{ message }}</h3>
+<br />
+<form action="{% url 'index' %}" method="post">
+  {% csrf_token %}
+  <p><input type="text" id="customer_name" name="customer_name" placeholder="Customer Name" /></p>
+  <p>
+{% for flavor in flavors %}
+  <input type="checkbox" name="{{ flavor.id }}"/>
+    {{ flavor }}<br />
+{% endfor %}
+</p>
+<input type="submit" name="submit" value="Create Order" />
+</form>
+{% endblock %}
