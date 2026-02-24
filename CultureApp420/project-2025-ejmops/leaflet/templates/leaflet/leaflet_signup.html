@@ -1,0 +1,54 @@
+{% extends 'leaflet/leaflet_base.html' %}
+
+{% block title %}
+	Signup | Leaflet
+{% endblock %}
+
+{% block content %}
+    <div class="signup-card">
+    <h3>Sign Up</h3>
+    <form method="post" action="{% url 'signup' %}">
+        {% csrf_token %}
+
+        <div class="form-field">
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {% if form.username.errors %}
+                <small class="error">{{ form.username.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+        <div class="form-field">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+            {% if form.email.errors %}
+                <small class="error">{{ form.email.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+
+        <div class="form-field">
+            {{ form.password1.label_tag }}
+            {{ form.password1 }}
+            {% if form.password1.errors %}
+                <small class="error">{{ form.password1.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+        <div class="form-field">
+            {{ form.password2.label_tag }}
+            {{ form.password2 }}
+            {% if form.password2.errors %}
+                <small class="error">{{ form.password2.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+
+        <div class="button-container">
+            <button class="secondary-button" type="button" onclick="window.location.href='{% url 'home' %}'">Cancel</button>
+            <button class="primary-button" type="submit">Signup</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

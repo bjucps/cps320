@@ -1,0 +1,38 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block title %}QR code for {{ event.title }}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <h1>{{ event.title }}</h1>
+
+    <h2>{{ event.date }}</h2>
+
+    <h3>Scan to Scan in:</h3>
+
+    <img id="qr-img" src="" alt="loading .............">
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const img = document.getElementById("qr-img");
+
+        const token_url = "{{ token_url|escapejs }}";
+
+        function fetch_new_code() {
+            console.log("new qr code");
+            fetch(token_url).then(response => response.json()).then(data => {
+                img.src = "data:image/png;base64," + data.qr_image_data;
+            }).catch(err => {
+                console.error("Error getting qr code", err);
+                img.alt = "Error, please refrench";
+            });
+        }
+        fetch_new_code();
+
+        setInterval(fetch_new_code, 5000);
+    });
+</script>
+{% endblock %}

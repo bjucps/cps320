@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://github.com/mebjas/html5-qrcode/releases/download/v2.3.8/html5-qrcode.min.js"></script>
+  <style>
+    body {
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #qr-reader {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      border: 2px dashed #cccccc;
+    }
+    #qr-result = {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      word-wrap: break-word;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <header>
+    <h1>Fine Art Event Scanner</h1>
+  </header>
+
+  <main>
+      <input type="email" id="email-input" placeholder="null@students.bju.edu">
+      <div id="qr-reader"></div>
+      <h3>Scanning:</h3>
+      <div id="qr-result">Waiting for QR code...</div>
+  </main>
+
+  <script>
+      const emailin = document.getElementById("email-input")
+      let html5QrcodeScanner;
+
+      function onScanSuccess(decodedtxt, decodedresult) {
+          if (!emailin.value){
+              alert("Email is not valid. Refresh and go again");
+              return;
+          }
+
+
+          console.log(`matched = ${decodedtxt}`, decodedresult);
+
+          let resultEle = document.getElementById("qr-result");
+          resultEle.innerHTML = `<b>Code:</b> ${decodedtxt}`;
+
+          html5QrcodeScanner.clear().catch(error => {console.error("Failed to stop scanner.", error);});
+
+          if (decodedtxt.startsWith("http://") || decodedtxt.startsWith("https://")) {
+              resultEle.innerHTML += `<br><br><b>Redirecting .....</b>`;
+              
+              window.location.href = decodedtxt + "&email=" + encodeURIComponent(emailin.value);
+          }
+
+      }
+
+      function onScanFailure(error) {
+          // literally don't care, try again
+      }
+
+      window.addEventListener("load", (event) => {
+          html5QrcodeScanner = new Html5QrcodeScanner(
+              "qr-reader",
+              {
+                  fps: 10,
+                  qrbox: {width: 250, height: 250},
+                  supportedScanTypes: [Html5QrcodeScanType.SCAN_TYPE_CAMERA]
+              },
+              false
+          );
+          html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+      });
+  </script>
+
+</body>
+</html>

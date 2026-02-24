@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bfm
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: "letsencrypt-dns"
+spec:
+  rules:
+    - host: bfm.elflordstudios.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: web
+                port:
+                  number: 8000
+  tls:
+    - hosts:
+        - bfm.elflordstudios.com
+      secretName:  wildcard-elflordstudios-tls

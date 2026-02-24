@@ -1,0 +1,425 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% load text_filters %}
+
+{% block title %}Program Leaflet - {{ leaflet.title }}{% endblock %}
+
+{% block content %}
+<div class="program-leaflet">
+    <div class="leaflet-page front-page">
+        <div class="university-header">
+            <div class="university-crest">
+                <img src="{% static 'frontend/img/Departmental Logo_Music-BW.png' %}" alt="BJU Crest" class="crest-logo" />
+            </div>
+            <div class="university-name">BOB JONES UNIVERSITY</div>
+            <div class="division-name">Division of Music</div>
+        </div>
+        
+        <div class="presents">presents</div>
+        
+        <div class="program-header">
+            <h1 class="program-title">{{ leaflet.title|upper }}</h1>
+            {% if leaflet.subtitle %}
+                <h2 class="program-subtitle">{{ leaflet.subtitle }}</h2>
+            {% endif %}
+        </div>
+        
+        <div class="event-details">
+            <div class="venue">{{ leaflet.location }}</div>
+            <div class="date">{{ leaflet.date }}</div>
+            <div class="time">{{ leaflet.time }}</div>
+        </div>
+        
+        <div class="program-content">
+            {% if leaflet.program_content %}
+                {% for item in leaflet.program_content %}
+                    {% if item.type == 'piece' %}
+                        <div class="piece-entry">
+                            <div class="piece-line">
+                                <span class="piece-title">{{ item.title }}</span>
+                                {% if item.author %}
+                                    <span class="dots"></span>
+                                    <span class="composer">{{ item.author }}
+                                        {% if item.composer_dates %}<br><span class="composer-dates">{{ item.composer_dates }}</span>{% endif %}
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% elif item.type == 'performers' %}
+                        <div class="performers-section">
+                            {% for performer in item.performers %}
+                                <div class="performer-name">{{ performer }}</div>
+                            {% endfor %}
+                        </div>
+                    {% elif item.type == 'participants' %}
+                        <div class="participants-section">
+                            {% if item.part and item.names_str %}
+                                <div class="participant-line">{{ item.names_str }}, {{ item.part }}</div>
+                            {% endif %}
+                        </div>
+                    {% elif item.type == 'instruction' %}
+                        <div class="coach-line">
+                            {{ item.text }}
+                        </div>
+                    {% elif item.type == 'heading' %}
+                        <div class="section-break">
+                            <div class="spacing"></div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="leaflet-page back-page">
+        <div class="performance-notice">
+            <em>Please silence all cell phones and other electronic devices before the performance. 
+            Cameras, flash photography and recording devices create distractions and may 
+            infringe on copyright law. The use of all such devices is prohibited.</em>
+        </div>
+        
+        <div class="upcoming-events">
+            <h3 class="section-title">Upcoming Music Events</h3>
+            <div class="events-list">
+                {% for line in leaflet.upcoming_events.splitlines %}
+                    {% if line.strip %}
+                        <div class="event-item">{{ line|format_bold }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="donors-section">
+            <h2 class="donors-title">FRIENDS OF MUSIC AT BJU 2024–2025</h2>
+            <div class="donors-grid">
+                {% for line in contributors_left %}
+                    {% if line.strip %}
+                        <div class="donor-name">{{ line|format_bold }}</div>
+                    {% endif %}
+                {% endfor %}
+                {% for line in contributors_right %}
+                    {% if line.strip %}
+                        <div class="donor-name">{{ line|format_bold }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://music.bju.edu/friends" alt="QR Code" class="qr-image">
+            </div>
+            <div class="cta-text">
+                <h4 class="cta-title">BECOME A FRIEND OF MUSIC AT BJU</h4>
+                <p class="cta-description">{{ leaflet.donor_text }}</p>
+                <p class="cta-link"><strong>music.bju.edu/friends</strong></p>
+            </div>
+        </div>
+        
+        <div class="mission-statement">
+            <p>{{ leaflet.mission_statement|format_bold }}</p>
+        </div>
+        
+        <div class="accreditation">
+            <p>Bob Jones University is an accredited institutional member of the<br>
+            <strong>National Association of Schools of Music.</strong></p>
+        </div>
+    </div>
+    
+    <div class="navigation-controls text-center mt-4">
+        <a href="{% url 'index' %}" class="btn btn-outline-secondary">← Create Another Leaflet</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<style>
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('{% static "frontend/fonts/minion-pro/MinionPro-Regular.otf" %}');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('{% static "frontend/fonts/minion-pro/MinionPro-Bold.otf" %}');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('{% static "frontend/fonts/minion-pro/MinionPro-It.otf" %}');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('{% static "frontend/fonts/minion-pro/MinionPro-BoldIt.otf" %}');
+    font-weight: bold;
+    font-style: italic;
+}
+
+.program-leaflet {
+    max-width: 8.5in;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.4;
+    color: #000;
+}
+
+.leaflet-page {
+    width: 100%;
+    min-height: 11in;
+    background: white;
+    padding: 1in;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    page-break-after: always;
+}
+
+.front-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.university-header {
+    margin-bottom: 2rem;
+}
+
+.crest-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.university-name {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.division-name {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.presents {
+    font-size: 16px;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+}
+
+.program-title {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.program-subtitle {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.event-details {
+    margin-bottom: 3rem;
+}
+
+.venue {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    font-size: 16px;
+    margin-bottom: 0.25rem;
+}
+
+.time {
+    font-size: 16px;
+}
+
+.program-content {
+    text-align: left;
+    max-width: 6in;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.piece-entry {
+    margin-bottom: 1.5rem;
+}
+
+.piece-line {
+    display: flex;
+    align-items: baseline;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.piece-title {
+    flex: 0 0 auto;
+    font-style: italic;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 1px dotted #333;
+    margin: 0 8px 4px 8px;
+    height: 0;
+    min-width: 50px;
+}
+
+.composer {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.composer-dates {
+    font-size: 14px;
+    text-align: right;
+    display: block;
+    margin-top: 2px;
+}
+
+.performers-section {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    font-size: 14px;
+}
+
+.performer-name {
+    margin-bottom: 0.25rem;
+}
+
+.participants-section {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 14px;
+}
+
+.coach-line {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 14px;
+}
+
+.section-break {
+    margin: 2rem 0;
+}
+
+.back-page {
+    text-align: left;
+    font-size: 14px;
+}
+
+.performance-notice {
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.upcoming-events {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.event-item {
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.donors-section {
+    margin-bottom: 2rem;
+}
+
+.donors-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.donors-grid {
+    column-count: 3;
+    column-gap: 1rem;
+    font-size: 12px;
+}
+
+.donor-name {
+    break-inside: avoid;
+    margin-bottom: 0.25rem;
+}
+
+.cta-section {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.qr-image {
+    width: 100px;
+    height: 100px;
+   
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.cta-description {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+
+.cta-link {
+    font-size: 12px;
+    margin: 0;
+}
+
+.mission-statement {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.accreditation {
+    text-align: center;
+    font-size: 11px;
+}
+
+.navigation-controls {
+    margin-top: 2rem;
+}
+
+</style>
+{% endblock %}

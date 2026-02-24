@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Event Listing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Fine Art Events</h1>
+
+  <div class="event-list">
+
+    {% for event in events %}
+      <article class="event-card">
+
+        <h2 class="event-title">
+          {% if event.link %}
+            <a href="{{ event.link }}" target="_blank" rel="noopener noreferrer">{{ event.title }}</a>
+          {% else %}
+            {{ event.title }}
+          {% endif %}
+        </h2>
+
+        <p class="event-date">{{ event.date }}</p>
+
+        {% if event.location %}
+          <p class="event-location">
+            <strong>Location:</strong> {{ event.location.name }}
+
+            {% if event.location.room %}
+              (Room {{ event.location.room }})
+            {% endif %}
+
+            {% if event.location.link %}
+              <a href="{{ event.location.link }}" class="location-link" target="_blank" rel="noopener noreferrer">[Map]</a>
+            {% endif %}
+          </p>
+        {% endif %}
+
+        {% if event.description %}
+          <p class="event-description">{{ event.description }}</p>
+        {% endif %}
+
+      </article>
+
+    {% empty %}
+      <p style="text-align: center;">There are no events scheduled at this time.</p>
+    {% endfor %}
+
+  </div>
+</body>
+</html>

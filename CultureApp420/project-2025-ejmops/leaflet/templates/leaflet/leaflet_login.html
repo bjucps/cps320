@@ -1,0 +1,36 @@
+{% extends 'leaflet/leaflet_base.html' %}
+
+{% block title %}
+	Login | Leaflet
+{% endblock %}
+
+{% block content %}
+    <div class="login-card">
+    <h3>Login</h3>
+    <form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+		<input type="hidden" name="next" value="{{ next }}">
+        <div class="form-field">
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {% if form.username.errors %}
+                <small class="error">{{ form.username.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+        <div class="form-field">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            {% if form.password.errors %}
+                <small class="error">{{ form.password.errors|striptags }}</small>
+            {% endif %}
+        </div>
+
+        <div class="button-container">
+            <button class="secondary-button" type="button" onclick="window.location.href='{% url 'home' %}'">Cancel</button>
+            <button class="primary-button" type="submit">Login</button>
+        </div>
+
+    </form>
+    </div>
+{% endblock %}

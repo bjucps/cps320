@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BJU Fine Arts EVENT HUB</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <!-- header -->
+  <div class="header">
+    <a href="/">
+      <img src="{% static 'images/logo.png' %}" alt="BJU Logo">
+    </a>
+    <button class="view-events" onclick="showEvents()">View Event List</button>
+  </div>
+
+  <!-- welcome box -->
+  <div class="welcome-box" id="welcome">
+    <h1>ARTS & MUSIC AT BJU</h1>
+    <p>
+      The app is designed to connect students and the community 
+      with performances and exhibitions in one place.
+    </p>
+    <p class="italic">
+      to simplify event access and tracking while celebrating the beauty of God 
+      through creativity and excellence.
+    </p>
+  </div>
+
+  <!-- event list -->
+  <div id="events" class="event-list">
+    <h2 class="event-heading">
+      <span class="big">UPCOMING</span>
+      <span class="script">events</span>
+    </h2>
+
+    <!-- flash messages -->
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- event cards -->
+    {% for event in events %}
+      <div class="event-card">
+        {% if event.image %}
+          <img src="{{ event.image.url }}" alt="{{ event.title }}">
+        {% endif %}
+        <div class="event-info">
+          <p>
+            <strong>
+              {% for d in event.dates.all %}
+                {{ d.date|date:"M. j, Y" }}{% if not forloop.last %}, {% endif %}
+              {% endfor %}
+            </strong> — {{ event.title }}
+          </p>
+          <p>{{ event.description }}</p>
+
+  <!-- capacity info -->
+  {% if event.capacity %}
+    <p class="capacity-info">
+      {{ event.reg_count }} / {{ event.capacity }} registered
+      {% if event.reg_count >= event.capacity %}
+        <span class="full-label">(Full)</span>
+      {% endif %}
+    </p>
+  {% endif %}
+
+  <!-- registration buttons -->
+  {% if event.id in my_event_ids %}
+    <form action="{% url 'events_app:unregister_event' event.id %}" method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn-base btn-unregister">Unregister</button>
+    </form>
+  {% else %}
+    <form action="{% url 'events_app:register_event' event.id %}" method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn-base btn-register">
+        {% if event.capacity and event.reg_count >= event.capacity %}
+          Join Waitlist
+        {% else %}
+          Register
+        {% endif %}
+      </button>
+    </form>
+  {% endif %}
+
+  {% if user.is_staff %}
+      <a class="export-link" href="{% url 'events_app:export_csv' event.id %}">Export CSV</a>
+      <a class="export-link" href="{% url 'events_app:manage_event' event.id %}">Manage Event</a>
+  {% endif %}
+
+</div>
+      </div>
+    {% empty %}
+      <p>No events available.</p>
+    {% endfor %}
+  </div>
+
+  <!-- scripts -->
+  <script src="{% static 'js/scripts.js' %}"></script>
+  <script>
+    // scripts.js may not be loaded yet, so define showEvents here if needed
+    if (typeof showEvents !== "function") {
+      window.showEvents = function () {
+        const welcome = document.getElementById("welcome");
+        const events = document.getElementById("events");
+        if (!welcome || !events) return;
+        welcome.style.opacity = 1;
+        const fadeOut = setInterval(() => {
+          const op = parseFloat(welcome.style.opacity || "1");
+          if (op > 0) {
+            welcome.style.opacity = (op - 0.1).toString();
+          } else {
+            clearInterval(fadeOut);
+            welcome.style.display = "none";
+            events.style.display = "block";
+            events.style.opacity = 0;
+            const fadeIn = setInterval(() => {
+              const ep = parseFloat(events.style.opacity || "0");
+              if (ep < 1) {
+                events.style.opacity = (ep + 0.1).toString();
+              } else {
+                clearInterval(fadeIn);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }, 40);
+          }
+        }, 40);
+      };
+    }
+  </script>
+</body>
+</html>

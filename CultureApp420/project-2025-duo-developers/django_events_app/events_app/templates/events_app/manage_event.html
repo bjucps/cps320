@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage {{ event.title }}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!-- QR code library -->
+  <script src="{% static 'js/qrcode.js' %}"></script>
+</head>
+<body>
+  <!-- header -->
+  <div class="header">
+    <a href="{% url 'events_app:index' %}">
+      <img src="{% static 'images/logo.png' %}" alt="BJU Logo">
+    </a>
+  </div>
+
+  <div style="margin-top: 100px; padding: 20px; background: rgba(255,255,255,0.95); max-width: 900px; margin-left:auto; margin-right:auto; border-radius: 16px;">
+    <h1>Manage Event: {{ event.title }}</h1>
+
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+      <thead>
+        <tr>
+          <th style="border-bottom: 1px solid #ccc; text-align:left;">User</th>
+          <th style="border-bottom: 1px solid #ccc; text-align:left;">Email</th>
+          <th style="border-bottom: 1px solid #ccc; text-align:left;">Status</th>
+          <th style="border-bottom: 1px solid #ccc; text-align:left;">Check-in</th>
+          <th style="border-bottom: 1px solid #ccc; text-align:left;">QR</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for reg in registrations %}
+          <tr>
+            <td>{{ reg.user.username }}</td>
+            <td>{{ reg.user.email }}</td>
+            <td>
+              {% if reg.waitlist %}
+                WAITLIST ({{ reg.get_confirmed_display }})
+              {% else %}
+                CONFIRMED ({{ reg.get_confirmed_display }})
+              {% endif %}
+            </td>
+            <td>
+              {% if reg.checkin %}
+                <span style="color: green; font-weight:bold;">
+                  Checked in at {{ reg.checkin.checked_in_at|date:"Y-m-d H:i" }}
+                </span>
+              {% else %}
+                <form action="{% url 'events_app:checkin' reg.id %}" method="post" style="display:inline;">
+                  {% csrf_token %}
+                  <button type="submit" class="btn-base btn-register">Check in</button>
+                </form>
+              {% endif %}
+            </td>
+            <td>
+              {% url 'events_app:checkin' reg.id as rel_checkin_url %}
+              <button onclick="showQR('{{ origin }}/events_app/checkin/{{ reg.qr_token }}/')">
+                  Show QR
+              </button>
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="5">No registrations for this event yet.</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- QR modal -->
+  <div id="qr-modal"
+       style="display:none; position:fixed; top:0; left:0; right:0; bottom:0;
+              background: rgba(0,0,0,0.6); align-items: center; justify-content: center;">
+    <div style="background:white; padding:20px; border-radius:16px; text-align:center;">
+      <h2>Scan to Check In</h2>
+      <div id="qrcode" style="margin: 1rem auto;"></div>
+      <button type="button" class="btn-base btn-unregister" onclick="closeQR()">Close</button>
+    </div>
+  </div>
+
+    <script>
+    function showQR(url) {
+        var modal = document.getElementById("qr-modal");
+        var container = document.getElementById("qrcode");
+
+        // delete previous QR code if any
+        container.innerHTML = "";
+
+        // setup QR code color options
+        new QRCode(container, {
+        text: url,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",     // black dots
+        colorLight: "#ffffff"     // white background
+        });
+
+        modal.style.display = "flex";
+    }
+
+    function closeQR() {
+        document.getElementById("qr-modal").style.display = "none";
+    }
+    </script>
+</body>
+</html>

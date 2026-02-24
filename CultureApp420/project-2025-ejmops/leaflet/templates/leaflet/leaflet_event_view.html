@@ -1,0 +1,169 @@
+{% extends 'leaflet/leaflet_base.html' %}
+
+{% load static %}
+
+{% block title %}
+	Event | Leaflet
+{% endblock %}
+
+
+{% block content %}
+    <div class="event-title-page">
+    {% if is_admin %}
+        <div class="button-container">
+            <button class="accent-button" onclick=openDialogButton('editFormDialog')>Edit Event</button>
+            <button class="accent-button" onclick=openDialogButton('deleteEventFormDialog')><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F8FF"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></button>
+        </div>
+        
+        <dialog id="deleteEventFormDialog">
+            <h5>Are you sure you want to delete {{ event.title|upper }}?</h5>
+            <form action="{% url 'delete_event' event.id %}" method="post">
+                {% csrf_token %}
+                <div class="button-container">
+                    <button type="button" class="secondary-button" onclick="closeDialogButton('deleteEventFormDialog')">Cancel</button>
+                    <button class="error-button" type="submit">Delete</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog id="editFormDialog" >
+                <h4 style="margin-bottom: 2em;" >Edit {{ event.title|capfirst }}</h4>
+                <form id="editForm" method="post" action="{% url 'edit_event' event.id %}">
+                    {% csrf_token %}
+                    {{ edit_form.as_p }}
+                    <div class="button-container">
+                        <button type="button" class="secondary-button" onclick="closeDialogButton('editFormDialog')">Cancel</button>
+                        <button class="primary-button" type="submit">Save</button>
+                    </div>
+                </form>
+            </dialog>
+
+
+    {% endif %}
+        <div>
+            <img style='width:64px;' src="{% static 'leaflet/images/icon.webp' %}" alt="">
+            <h2>{{ event.institution }}</h2>
+            <h3>Division of {{ event.division }}</h3>
+        </div>
+            <p>presents</p>
+        <div>
+        <h3 style="font-weight: bold;">{{ event.title|upper }}</h3>
+        </div>
+        <div>
+            <h5>{{ event.director }}, Director</h5>
+            <h5>{{ event.location|upper }} </h5>
+            <h5>{{ event.date|upper }}</h5>
+            <h5>{{ event.time}}</h5>
+        </div>
+   </div>
+
+    {% if is_admin %}
+        <dialog id="sectionFormDialog" >
+            <h3>Add Section</h3>
+            <form id="sectionForm" method="post" action="{% url 'section_builder' event.id %}">
+                {% csrf_token %}
+                {{ section_form }}
+                <div class="button-container">
+                <button type="button" class="secondary-button" onclick="closeDialogButton('sectionFormDialog')">Cancel</button>
+                <button class="primary-button" type="submit">Add</button>
+            </div>
+            </form>
+        </dialog>
+
+
+    {% endif %}
+    <hr style="width: 100%; border: 1px solid var(--dark)"  />
+
+    <section class="events-elements-section">
+    {% if is_admin %}
+        <button style="align-self:start; color: var(--light); margin-bottom: 2rem;" class="accent-button" onclick="openDialogButton('sectionFormDialog')">Add Sections <svg style="padding: 0; margin: 0;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F8FF"><path d="M463.08-463.08H240v-33.84h223.08V-720h33.84v223.08H720v33.84H496.92V-240h-33.84v-223.08Z"/></svg></button>
+    {% endif %}
+        {% for section_title, value in event_contents.items %}
+            {% if is_admin %}
+                <dialog id="elementFormDialog-{{ value.0.id  }}" >
+                    <h3>Add Elements</h3>
+                    <form id="elementForm" method="post" action="{% url 'elements_builder' event.id value.0.id %}">
+                        {% csrf_token %}
+                        {{ element_form }}
+                        <div class="button-container">
+                            <button type="button" class="secondary-button" onclick="closeDialogButton('elementFormDialog-{{ value.0.id  }}')">Cancel</button>
+                            <button class="primary-button" type="submit">Add</button>
+                        </div>
+                    </form>
+                </dialog>
+                <dialog id="ellipsisMenuDialog-{{ value.0.id }}">
+                    <button style="border: none; background-color: transparent;" onclick="closeDialogButton('ellipsisMenuDialog-{{ value.0.id }}')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+                    <ul class="ellipsis-menu">
+                        <li><button class="secondary-button" onclick="openDialogButton('elementFormDialog-{{ value.0.id  }}')">Add Elements</button></li>
+
+                        <li><button class="secondary-button" onclick="window.location.href='{% url 'delete_section' event.id value.0.id %}'">Delete Section</button></li>
+                    </ul>
+            </dialog>
+            {% endif %}
+            <div class="program-container">
+            <div style="display: flex;  margin-bottom: 2rem; align-items: center;">
+                <h2 style="flex-grow: 1; text-align: center;">{{ section_title }}</h2>
+                {% if  is_admin %}
+                    <button style="margin-left:auto; border: none; background-color: transparent;" onclick="openDialogButton('ellipsisMenuDialog-{{ value.0.id }}')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"/></svg></button>
+                {% endif %}
+            </div>
+            {% with elements=value.1 %}
+                {% for element in elements %}
+                    <dialog id="elementDeleteDialog-{{ element.id }}" >
+                        <h3>Are you sure you want to delete "{{ element.performance_title }}"?</h3>
+                        <form id="elementForm" method="post" action="{% url 'delete_element' event.id element.id %}">
+                            {% csrf_token %}
+                            <div class="button-container">
+                                <button type="button" class="secondary-button" onclick="closeDialogButton('elementDeleteDialog-{{ element.id }}')">Cancel</button>
+                                <button class="primary-button" type="submit">Yes</button>
+                            </div>
+                    </form>
+                    </dialog>
+                    <button onclick="openDialogButton('elementDeleteDialog-{{ element.id }}')" class="element-wrapper">
+                        <span><p>{{ element.performance_title}}</p><p>{{ element.author }}</p> </span>
+                        <p>{{ element.performer }}</p>
+                        <p>{{ element.type|upper }}</p>
+                    </button>
+                {% endfor %}
+            {% endwith %}
+            </div>
+        {% endfor %}
+    </section>
+
+    <hr style="width: 100%; border: 1px solid var(--dark)"  />
+
+    <section class="events-footer-section">
+        <p><i>Please silence all cell phones and other electronic devices before the performance.
+Cameras, flash photography and recording devices create distractions and may
+infringe on copyright law. The use of all such devices is prohibited.</i></p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; justify-content: center;">
+        <img style="max-width: 90%; " src="data:image/png;base64,{{ donor_qr }}" alt="QR Code">
+        <p> BECOME A FRIEND OF MUSIC AT BJU
+We depend on Friends like you to deliver transformative learning
+experiences for our Music At BJU students. Join us in our commitment
+to pursuing and sharing the beauty of God through musical excellence
+and redemptive artistry by making a tax-deductible donation to the
+Division of Music. <a  style="text-decoration: underline;" href="https://music.bju.edu/friends" target="_blank">Learn More</a></p>
+    </div>
+    <small><i>{{ event.division.mission_statement }}</i></small>
+
+    </section>
+{% endblock %}
+
+{% block script %}
+	    <script>
+        const openButton = document.getElementById('openDialogButton');
+
+        const openDialogButton = (dialogClass) =>{
+            const sectionDialog = document.getElementById(`${dialogClass}`);
+            sectionDialog.showModal();
+        }
+
+        const closeDialogButton = (dialogID) =>{
+            const dialog = document.getElementById(`${dialogID}`);
+            dialog.close();
+        }
+
+
+    </script>
+{% endblock %}

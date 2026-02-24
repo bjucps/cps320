@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: C:\Users\oreom\.local\bin\kompose.exe convert
+    kompose.version: 1.34.0 (cbf2835db)
+  labels:
+    io.kompose.service: web
+  name: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: web
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: C:\Users\oreom\.local\bin\kompose.exe convert
+        kompose.version: 1.34.0 (cbf2835db)
+      labels:
+        io.kompose.service: web
+    spec:
+      containers:
+        - env:
+          - name: DATABASE_ENGINE
+            value: django.db.backends.postgresql
+          - name: DATABASE_HOST
+            value: db
+          - name: DATABASE_PORT
+            value: "5432"
+          - name: DJANGO_DEBUG
+            value: "False"
+
+          envFrom:
+            - secretRef:
+                name: web-env
+          
+          image: elflordgames/brunneus-ferrum-malleus:latest
+          name: brunneus-ferrum-malleus-web
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          volumeMounts:
+            - name: staticfiles
+              mountPath: /var/www/api/
+              # The API must be able to copy the files to the volume.
+              readOnly: false
+        - name: nginx-sidecar
+          image: nginx:stable
+          imagePullPolicy: Always
+          securityContext:
+            privileged: false
+            # Nginx must start as root to bind the proper port in the container.
+            allowPrivilegeEscalation: true
+            runAsNonRoot: false
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          volumeMounts:
+            - name: nginx-conf
+              mountPath: /etc/nginx/conf.d
+              readOnly: true
+            - name: staticfiles
+              mountPath: /var/www/api/
+              readOnly: true
+      restartPolicy: Always
+      volumes:
+        - name: nginx-conf
+          configMap:
+            name: backend-api-nginx
+        - name: staticfiles
+          emptyDir: {}

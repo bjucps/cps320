@@ -1,0 +1,274 @@
+
+{% extends 'frontend/base.html' %}
+
+{% block title %}Create Program Leaflet{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h1>Create Program Leaflet</h1>
+            <button type="button" class="btn btn-outline-info btn-sm" onclick="fillSampleData()">Fill Sample Data</button>
+        </div>
+        
+        {% if message %}
+            <div class="alert alert-info">{{ message }}</div>
+        {% endif %}
+
+        <form action="/submit_program_leaflet/" method="post" id="leaflet-form">
+            {% csrf_token %}
+
+            <div class="card">
+                <div class="card-header"><h5>Title Page</h5></div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.institution.label }}</label>
+                                {{ form.institution }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.division.label }}</label>
+                                {{ form.division }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.title.label }}</label>
+                                {{ form.title }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.subtitle.label }}</label>
+                                {{ form.subtitle }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.director.label }}</label>
+                                {{ form.director }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.location.label }}</label>
+                                {{ form.location }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.date.label }}</label>
+                                {{ form.date }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.time.label }}</label>
+                                {{ form.time }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h5>Program Content</h5>
+                    <div class="btn-group mt-2">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addContentItem('piece')">Add Piece</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addContentItem('performers')">Add Performers</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addContentItem('heading')">Add Heading</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addContentItem('participants')">Add Participants</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="addContentItem('instruction')">Add Instruction</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="program-content-container">
+                        <!-- Dynamic content items will be added here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header"><h5>Back Page</h5></div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.contributors.label }}</label>
+                                {{ form.contributors }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.donor_title.label }}</label>
+                                {{ form.donor_title }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.donor_text.label }}</label>
+                                {{ form.donor_text }}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.donor_link.label }}</label>
+                                {{ form.donor_link }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.upcoming_events.label }}</label>
+                                {{ form.upcoming_events }}
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">{{ form.mission_statement.label }}</label>
+                                {{ form.mission_statement }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" name="program_content" id="program-content-data">
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Save Program Leaflet</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    let contentItemCounter = 0;
+
+    function addContentItem(type) {
+        const container = document.getElementById('program-content-container');
+        const itemId = `content-item-${contentItemCounter++}`;
+
+        let content = '';
+        switch (type) {
+            case 'piece':
+                content = `
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label">Piece Title:</label>
+                            <input type="text" class="form-control piece-title" data-field="title">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Author/Composer:</label>
+                            <input type="text" class="form-control piece-author" data-field="author">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Composer Dates (optional):</label>
+                            <input type="text" class="form-control composer-dates" data-field="composer_dates" placeholder="e.g. (1841-1904)">
+                        </div>
+                    </div>`;
+                break;
+            case 'performers':
+                content = `
+                    <label class="form-label">Performers (one per line):</label>
+                    <textarea class="form-control performers-list" rows="3" data-field="performers"></textarea>`;
+                break;
+            case 'heading':
+                content = `
+                    <label class="form-label">Heading:</label>
+                    <input type="text" class="form-control heading-text" data-field="text">`;
+                break;
+            case 'participants':
+                content = `
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label">Part:</label>
+                            <input type="text" class="form-control participant-part" data-field="part">
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Names:</label>
+                            <input type="text" class="form-control participant-names" data-field="names">
+                        </div>
+                    </div>`;
+                break;
+            case 'instruction':
+                content = `
+                    <label class="form-label">Instruction:</label>
+                    <input type="text" class="form-control instruction-text" data-field="text">`;
+                break;
+        }
+
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'dynamic-item';
+        itemDiv.id = itemId;
+        itemDiv.dataset.type = type;
+        itemDiv.innerHTML = content + `<button type="button" class="remove-btn" onclick="removeContentItem('${itemId}')">X</button>`;
+
+        container.appendChild(itemDiv);
+    }
+
+    function removeContentItem(itemId) {
+        document.getElementById(itemId).remove();
+    }
+
+    document.getElementById('leaflet-form').addEventListener('submit', function(e) {
+        // get all program content data
+        const contentItems = [];
+        document.querySelectorAll('.dynamic-item').forEach(item => {
+            const type = item.dataset.type;
+            const data = { type };
+
+            item.querySelectorAll('[data-field]').forEach(field => {
+                const fieldName = field.dataset.field;
+                if (fieldName === 'performers') {
+                    data[fieldName] = field.value.split('\n').filter(p => p.trim());
+                } else {
+                    data[fieldName] = field.value;
+                }
+            });
+
+            contentItems.push(data);
+        });
+
+        document.getElementById('program-content-data').value = JSON.stringify(contentItems);
+    });
+
+    // Initialize with one piece
+    addContentItem('piece');
+    
+    // Fill form with sample data for demo purposes
+    function fillSampleData() {
+        // Fill basic form fields
+        document.querySelector('[name="title"]').value = 'String Chamber Recital';
+        document.querySelector('[name="subtitle"]').value = '';
+        document.querySelector('[name="institution"]').value = 'Bob Jones University';
+        document.querySelector('[name="division"]').value = 'Division of Music';
+        document.querySelector('[name="director"]').value = 'Dr. Jonathan Simmons';
+        document.querySelector('[name="location"]').value = 'War Memorial Chapel';
+        document.querySelector('[name="date"]').value = 'Saturday, April 12, 2025';
+        document.querySelector('[name="time"]').value = '6:00 P.M.';
+        
+        // Fill back page content
+        document.querySelector('[name="contributors"]').value = 'Dr. Jonathan Simmons - Faculty Coach\nKatie Bracewell - Faculty Coach\nBrandon Ironside - Faculty Coach';
+        document.querySelector('[name="donor_title"]').value = 'Special Thanks';
+        document.querySelector('[name="donor_text"]').value = 'We depend on Friends like you to deliver transformative learning experiences for our Music students.';
+        document.querySelector('[name="donor_link"]').value = 'https://music.bju.edu/friends';
+        document.querySelector('[name="upcoming_events"]').value = 'Micah Hyink Violin Recital, April 14, 4:00 p.m., Stratton Hall\nUniversity Singers, April 16, 5:30 p.m., Stratton Hall\nPercussion Ensemble, April 18, 5:30 p.m., Stratton Hall';
+        document.querySelector('[name="mission_statement"]').value = 'The Division of Music at BJU is a community of students, faculty, and staff committed to empowering musicians to pursue and share the beauty of God through redemptive artistry.';
+        
+        // Clear existing dynamic content and add sample pieces
+        document.getElementById('program-content-container').innerHTML = '';
+        contentItemCounter = 0;
+        
+        // Add first piece
+        addContentItem('piece');
+        const piece1 = document.querySelector('.dynamic-item:last-child');
+        piece1.querySelector('[data-field="title"]').value = 'Miniatures, Op. 75a';
+        piece1.querySelector('[data-field="author"]').value = 'Antonín Dvořák';
+        piece1.querySelector('[data-field="composer_dates"]').value = '(1841–1904)';
+        
+        // Add performers
+        addContentItem('performers');
+        const performers1 = document.querySelector('.dynamic-item:last-child');
+        performers1.querySelector('[data-field="performers"]').value = 'David Ong, violin I\nKaitlyn Dalton, violin II\nSydney Davis, viola';
+        
+        // Add coaching info
+        addContentItem('instruction');
+        const coach1 = document.querySelector('.dynamic-item:last-child');
+        coach1.querySelector('[data-field="text"]').value = 'Coached by Katie Bracewell';
+        
+        // Add second piece
+        addContentItem('piece');
+        const piece2 = document.querySelector('.dynamic-item:last-child');
+        piece2.querySelector('[data-field="title"]').value = 'Sonata No.1 in G major (1804)';
+        piece2.querySelector('[data-field="author"]').value = 'Giacchino Rossini';
+        piece2.querySelector('[data-field="composer_dates"]').value = '(1792–1868)';
+    }
+
+</script>
+{% endblock %}

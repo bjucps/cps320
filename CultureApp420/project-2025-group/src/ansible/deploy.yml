@@ -1,0 +1,120 @@
+---
+- name: Deploy Django App
+  hosts: all
+  become: yes
+
+  vars:
+
+    project_dir: "/home/{{ ansible_user }}/my-django-app"
+    docker_image: "bookwormryan/django-app:latest"
+    container_name: "{{ ansible_user }}-django-prod"
+    container_port: 8002
+    app_port: 8001
+    restart_policy: always
+    docker_network: "{{ ansible_user }}-network"
+
+
+    postgres_container_name: "{{ ansible_user }}-postgres"
+    postgres_volume: "{{ ansible_user }}-postgres-data"
+
+
+    allowed_hosts: "{{ lookup('env', 'ALLOWED_HOSTS') | default('74.208.192.225,localhost,127.0.0.1,group.bjucps.dev', true) }}"
+    debug: "{{ lookup('env', 'DEBUG') | default('0', true) }}"
+    django_secret_key: "{{ lookup('env', 'DJANGO_SECRET_KEY') }}"
+    database_engine: "postgresql_psycopg2"
+    database_name: "fa_db"
+    database_username: "postgres"
+    database_password: "{{ lookup('env', 'DATABASE_PASSWORD') }}"
+    database_host: "rkuhn-postgres"
+    database_port: "5432"
+    CLIENT_SECRET: "{{ lookup('env', 'CLIENT_SECRET') }}"
+
+  tasks:
+
+    - name: Create Docker network
+      community.docker.docker_network:
+        name: "{{ docker_network }}"
+        state: present
+
+    - name: Create PostgreSQL volume
+      community.docker.docker_volume:
+        name: "{{ postgres_volume }}"
+        state: present
+
+    - name: Ensure project directory exists
+      ansible.builtin.file:
+        path: "{{ project_dir }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0755'
+
+
+    - name: Ensure static directories exist
+      ansible.builtin.file:
+        path: "{{ project_dir }}/{{ item }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0755'
+      loop:
+        - static
+        - media
+
+    - name: Copy docker-compose template to server
+      ansible.builtin.template:
+        src: docker-compose.yml.j2
+        dest: "{{ project_dir }}/docker-compose.yml"
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0644'
+
+
+
+    - name: Update Nginx configuration on Host
+      ansible.builtin.template:
+        src: nginx-host.conf.j2
+        dest: /etc/nginx/conf.d/group.bjucps.dev.conf
+        mode: '0644'
+      notify: Reload Nginx
+
+
+    - name: Install Docker Compose
+      ansible.builtin.apt:
+        name: docker-compose-plugin
+        state: present
+        update_cache: yes
+
+    - name: Deploy services with docker-compose
+      community.docker.docker_compose_v2:
+        project_src: "{{ project_dir }}"
+        state: present
+        recreate: "always"
+        pull: "always"
+    - name: Allow Nginx to enter the user's home directory
+      ansible.builtin.file:
+          path: "/home/{{ ansible_user }}"
+          state: directory
+          mode: '0711'
+
+    - name: Allow Nginx to enter the project directory
+      ansible.builtin.file:
+        path: "{{ project_dir }}"
+        state: directory
+        mode: '0711'
+
+    - name: Fix static file permissions for Nginx
+      ansible.builtin.file:
+        path: "{{ project_dir }}/static"
+        state: directory
+        recurse: yes
+        owner: www-data
+        group: www-data
+        mode: '0755'
+
+
+  handlers:
+    - name: Reload Nginx
+      service:
+        name: nginx
+        state: reloaded

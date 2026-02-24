@@ -1,0 +1,42 @@
+name: Run Tests
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  dh-repo: elflordgames/brunneus-ferrum-malleus
+jobs:
+  build:
+    environment: Testing
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_NAME: ${{ vars.DATABASE_NAME }}
+      DATABASE_ENGINE: ${{ vars.DATABASE_ENGINE }}
+      DATABASE_HOST: ${{ vars.DATABASE_HOST }}
+      DATABASE_PORT: ${{ vars.DATABASE_PORT }}
+      DATABASE_USER: ${{ secrets.DATABASE_USER }}
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+      DJANGO_ALLOWED_HOSTS: ${{ vars.DJANGO_ALLOWED_HOSTS }}
+      DJANGO_CSRF_TRUSTED_ORIGINS: ${{ vars.DJANGO_CSRF_TRUSTED_ORIGINS }}
+      DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+
+    steps:
+      - name: Get the current date
+        id: date
+        run: echo "today=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_OUTPUT
+        # https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#steps-context
+
+      - uses: actions/checkout@v4
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag "${{ env.dh-repo }}:${{ steps.date.outputs.today }}"
+      - name: Start Database (for testing)
+        run: docker compose up -d db
+      - name: Run Django tests
+        run: docker compose up --build web
+        env:
+          TEST: True
+        # run: docker run --env TEST="True" --env DATABASE_NAME="${{ vars.DATABASE_NAME }}" "${{ env.dh-repo }}:${{ steps.date.outputs.today }}"
+
+      - name: Stop Database
+        run: docker compose down

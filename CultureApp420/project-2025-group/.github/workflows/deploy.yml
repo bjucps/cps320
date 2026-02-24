@@ -1,0 +1,48 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v5
+    
+    - name: Build Docker image
+      run: |
+        docker build -t bookwormryan/django-app:latest ./src
+        
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        
+    - name: Push image
+      run: docker push bookwormryan/django-app:latest
+      
+    - name: Deploy with Ansible
+      uses: dawidd6/action-ansible-playbook@v5
+      env:
+        DJANGO_SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
+        DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        ALLOWED_HOSTS: "74.208.192.225,localhost,127.0.0.1,group.bjucps.dev"
+        DEBUG: "0"
+      with:
+        playbook: deploy.yml
+        directory: ./src/ansible
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        inventory: |
+          [production]
+          prod-server ansible_host=74.208.192.225 ansible_user=rkuhn
+        options: |
+          --become
+          --extra-vars "ansible_become_password=${{ secrets.SUDO_PASSWORD }} \
+                    CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}"
+                  
+          
+          

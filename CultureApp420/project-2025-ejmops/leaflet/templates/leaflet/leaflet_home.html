@@ -1,0 +1,57 @@
+{% extends 'leaflet/leaflet_base.html' %}
+{% load static %}
+
+{% block title %}
+	Home | Leaflet
+{% endblock %}
+
+{% block content %}
+    <section class="hero-section"><img class="hero-img" src="{% static 'leaflet/images/music.webp' %}" alt="music-hero">
+    <div class="opacity-layer">
+        <div style="display: flex; flex-direction: column; gap: 1em; max-width: 80%; margin: auto;">
+                <h1>Welcome</h1>
+                <h5>Celebrate Music. Celebrate Art.</h5>
+                <p>An unforgettable performances and exhibitions from the Music and Arts Division.</p>
+            <button style="width: max-content; margin-top: 2em;" class="accent-button" id="events-btn" >View Events <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F8FF"><path d="m553.85-253.85-42.16-43.38L664.46-450H180v-60h484.46L511.69-662.77l42.16-43.38L780-480 553.85-253.85Z"/></svg></button>
+        </div>
+    </div>
+    </section>
+    <section class="events-section">
+    {% if is_admin %}
+    	    <a style="align-self:end; color: var(--light);" class="accent-button" href="{% url 'event_builder' %}">Create Event <svg style="padding: 0; margin: 0;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F8F8FF"><path d="M463.08-463.08H240v-33.84h223.08V-720h33.84v223.08H720v33.84H496.92V-240h-33.84v-223.08Z"/></svg></a>
+    {% endif %}
+        <h1>Events list</h1>
+
+
+    {% for event in events %}
+        <div class="events-container">
+            <div class="event-card" >
+                <h4>{{ event.title|upper }}</h4>
+                <h5>{{ event.division }}</h5>
+                <p><strong>{{ event.location }}</strong></p>
+                <small>{{ event.school_year }}</small>
+                <small>{{ event.date }} <strong>|</strong> {{ event.time }}</small>
+                <a id="event-link" href="{%  url 'event' event.id %}" >See more</a>
+            </div>
+        </div>
+    {% endfor %}
+
+    </section>
+
+
+{% endblock %}
+
+
+{% block script %}
+    <script>
+    document.addEventListener('DOMContentLoaded', () =>{
+        const eventsBtn = document.getElementById('events-btn');
+        const eventsSection = document.querySelector('.events-section');
+
+        eventsBtn.addEventListener('click', () =>{
+            console.log("I'm here");
+            eventsSection.scrollIntoView({ behavior: "smooth" });
+        })
+    })
+    </script>
+{% endblock %}

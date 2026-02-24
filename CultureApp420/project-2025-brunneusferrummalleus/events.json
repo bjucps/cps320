@@ -1,0 +1,138 @@
+{
+  "locations": [
+    {
+      "name": "War Memorial Chapel",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#wmc",
+      "what_three_words": "https://what3words.com/spoils.overwork.overruns"
+    },
+    {
+      "name": "Levinson Hall",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#welcomecenter",
+      "what_three_words": "https://what3words.com/redemption.film.canes"
+    },
+    {
+      "name": "Founder's Memorial Amphitorium",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#fma",
+      "what_three_words": "https://what3words.com/calm.noble.length"
+    },
+    {
+      "name": "Sargent Art Building",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#sargent",
+      "what_three_words": "https://what3words.com/mole.hugs.sofa"
+    },
+    {
+      "name": "Performance Hall",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#ph",
+      "what_three_words": "https://what3words.com/taller.perfected.shivering"
+    },
+    {
+      "name": "Stratton Hall",
+      "room": null,
+      "link": "https://www.bju.edu/about/campus-map/#sh",
+      "what_three_words": "https://what3words.com/queens.unveiling.whoever"
+    }
+  ],
+  "events": [
+    {
+      "date_start_time": "2025-10-04T19:00:00-00:00",
+      "date_end_time": "2025-10-04T20:30:00-00:00",
+      "title": "Rivertree Singers Ensemble in Residence",
+      "description": "Join the award winning Rivertree Singers, under the direction of Dr. Warren Cook and experience the magic of poetry transformed through music in When Poetry Sings, a choral celebration of verse set to song. At the heart of the program is Randall Thompson’s Frostiana, a beloved setting of poems by Robert Frost that captures the quiet strength and emotional depth of New England’s most iconic poet. Join us for an evening where great poetry doesn’t just speak, it sings!",
+      "link": null,
+      "location": "War Memorial Chapel"
+    },
+    {
+      "date_start_time": "2025-10-07T18:30:00-00:00",
+      "date_end_time": "2025-10-07T19:30:00-00:00",
+      "title": "COD Series: Pre-Concert Talk",
+      "description": "Music historian, Dr. Paul Overly, will present the historical and musical context behind the evening's repertoire.",
+      "link": null,
+      "location": "Levinson Hall"
+    },
+    {
+      "date_start_time": "2025-10-07T19:30:00-00:00",
+      "date_end_time": "2025-10-07T21:30:00-00:00",
+      "title": "COD Series: University Symphony Orchestra with David Kim",
+      "description": "David Kim, concertmaster of The Philadelphia Orchestra, returns to solo with the BJUSO, performing Tchaikovsky’s Violin Concerto. This concert of concertos will also feature student winners of our annual concerto and aria competition. Michael Moore, conductor.",
+      "link": "https://bju.edu/tickets",
+      "location": "Founder's Memorial Amphitorium"
+    },
+    {
+      "date_start_time": "2025-10-10T17:30:00-00:00",
+      "date_end_time": "2025-10-10T18:30:00-00:00",
+      "title": "A+D: Art+Life Talk of Michael Slattery",
+      "description": null,
+      "link": null,
+      "location": "Levinson Hall"
+    },
+    {
+      "date_start_time": "2025-10-10T18:30:00-00:00",
+      "date_end_time": "2025-10-10T20:00:00-00:00",
+      "title": "A+D Legacy Exhibition Opening: Michael Slattery-The Finer Points",
+      "description": "Michael J. Slattery was a beloved teacher, mentor, and artist whose creativity lit up the classroom and the studio alike. The Finer Points showcases his wide-ranging body of work. Whether through gouache, pen and ink, or printmaking, Slattery revealed how “a collection of marks made on a prepared surface” can capture both everyday humor and profound meaning. His observation and referencing to cultural experiences, art history as well as pop-culture objects and television series, make decoding his work relevant and enjoyable. Known for his sharp wit, approachability, and prolific studio practice, Slattery left an indelible mark on generations of students and the Art + Design community. Come experience this engaging retrospective and celebrate the legacy of an artist who continues to inspire through his art.",
+      "link": null,
+      "location": "Sargent Art Building"
+    },
+    {
+      "date_start_time": "2025-10-25T19:00:00-00:00",
+      "date_end_time": "2025-10-25T20:30:00-00:00",
+      "title": "Faculty Recital: Isaac Greene & Nathan MacAvoy",
+      "description": "Join Drs. Nathan MacAvoy and Isaac Greene of the Division of Music for a dynamic program of chamber music for the unusual combination of guitar and piano or guitar and harpsichord. Featuring four works of the 20th century, this program is sure to introduce you to something new and exciting.",
+      "link": null,
+      "location": "War Memorial Chapel"
+    },
+    {
+      "date_start_time": "2025-10-28T19:30:00-00:00",
+      "date_end_time": "2025-10-28T21:30:00-00:00",
+      "title": "Plays: Sorry, Wrong Number & Blind Date",
+      "description": "Two one-act plays presented by the Theatre department are produced by special arrangement with Dramatists Play Service www.dramatists.com.\n\nSorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own.\n\nBlind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece.",
+      "link": "https://bju.edu/tickets",
+      "location": "Performance Hall"
+    },
+    {
+      "date_start_time": "2025-10-29T17:30:00-00:00",
+      "date_end_time": "2025-10-29T19:00:00-00:00",
+      "title": "Woodwind Ensembles",
+      "description": "This eclectic chamber music program is presented by student ensembles under the guidance of the Woodwind faculty.",
+      "link": null,
+      "location": "War Memorial Chapel"
+    },
+    {
+      "date_start_time": "2025-10-30T19:30:00-00:00",
+      "date_end_time": "2025-10-30T21:30:00-00:00",
+      "title": "Plays: Sorry, Wrong Number & Blind Date",
+      "description": "Two one-act plays presented by the Theatre department are produced by special arrangement with Dramatists Play Service www.dramatists.com.\n\nSorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own.\n\nBlind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece.",
+      "link": "https://bju.edu/tickets",
+      "location": "Performance Hall"
+    },
+    {
+      "date_start_time": "2025-10-31T17:30:00-00:00",
+      "date_end_time": "2025-10-31T19:00:00-00:00",
+      "title": "Brass Choir",
+      "description": "Let the BJU Brass Choir brighten your day with Renaissance music by Sir John Bull, antiphonal music by Palestrina, Benjamin Britten’s ‘Russian Funeral’ and favorite melodies of Stephen Foster.",
+      "link": null,
+      "location": "Stratton Hall"
+    },
+    {
+      "date_start_time": "2025-10-31T19:00:00-00:00",
+      "date_end_time": "2025-10-31T20:30:00-00:00",
+      "title": "Chorale",
+      "description": "The Chorale will present its fall program, entitled All Nature Sings, drawing attention to the beauty and joy found in the created world and ultimately pointing us to the Creator. Featuring works by Le Jeune, Brahms, Runestad, Ešenvalds, and others.",
+      "link": null,
+      "location": "War Memorial Chapel"
+    },
+    {
+      "date_start_time": "2025-10-31T19:30:00-00:00",
+      "date_end_time": "2025-10-31T21:30:00-00:00",
+      "title": "Plays: Sorry, Wrong Number & Blind Date",
+      "description": "Two one-act plays presented by the Theatre department are produced by special arrangement with Dramatists Play Service www.dramatists.com.\n\nSorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own.\n\nBlind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece.",
+      "link": "https://bju.edu/tickets",
+      "location": "Performance Hall"
+    }
+  ]
+}

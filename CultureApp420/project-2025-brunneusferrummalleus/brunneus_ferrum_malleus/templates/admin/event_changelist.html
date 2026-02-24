@@ -1,0 +1,11 @@
+{% extends "admin/change_list.html" %}
+{% load admin_urls %}
+
+{% block object-tools-items %}
+    <li>
+        <a href="{% url 'admin:brunneus_ferrum_malleus_event_import' %}" class="button">
+            Import Events from JSON
+        </a>
+    </li>
+    {{ block.super }}
+{% endblock %}

@@ -1,0 +1,12 @@
+http://localhost {
+    # Serve static files from staticfiles directory
+    handle /static/* {
+        root * /srv/
+        file_server
+    }
+
+    # Proxy all other requests to Gunicorn
+    handle {
+        reverse_proxy http://brunneus-ferrum-malleus-web:8000
+    }
+}

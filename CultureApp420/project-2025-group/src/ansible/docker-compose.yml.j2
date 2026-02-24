@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16
+    container_name: {{ postgres_container_name }}
+    restart: always
+    volumes:
+      - {{ postgres_volume }}:/var/lib/postgresql/data
+    networks:
+      - {{ docker_network }}
+    environment:
+      POSTGRES_DB: "{{ database_name }}"
+      POSTGRES_USER: "{{ database_username }}"
+      POSTGRES_PASSWORD: "{{ database_password }}"
+
+  web:
+    image: {{ docker_image }}
+    container_name: {{ container_name }}
+    restart: always
+
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn fa_app.wsgi:application --bind 0.0.0.0:{{ app_port }} --forwarded-allow-ips='*'"
+    ports:
+
+      - "127.0.0.1:8002:8001"
+    volumes:
+
+      - {{ project_dir }}/static:/app/static
+      - {{ project_dir }}/media:/app/media
+    networks:
+      - {{ docker_network }}
+    depends_on:
+      - db
+    environment:
+      DJANGO_ALLOWED_HOSTS: "{{ allowed_hosts }}"
+      DEBUG: "{{ debug }}"
+      DJANGO_SECRET_KEY: "{{ django_secret_key }}"
+      DATABASE_ENGINE: "{{ database_engine }}"
+      DATABASE_NAME: "{{ database_name }}"
+      DATABASE_USERNAME: "{{ database_username }}"
+      DATABASE_PASSWORD: "{{ database_password }}"
+      DATABASE_HOST: "rkuhn-postgres"
+      DATABASE_PORT: "{{ database_port }}"
+      CLIENT_SECRET: "{{ CLIENT_SECRET }}"
+
+networks:
+  {{ docker_network }}:
+    external: true
+
+volumes:
+  {{ postgres_volume }}:
+    external: true
