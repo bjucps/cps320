@@ -1,0 +1,55 @@
+<!--    width;
+        title;
+        headers [list of table headers];
+        rows [list of event objects];
+    OPTIONAL:
+        link_address;
+        link_text; -->
+
+<style>
+    tr {
+        border-bottom: 1pt solid gray;
+    }
+</style>
+
+<div class="row justify-content-around">
+    <div class="col-sm-7 col-md-{{ width }} col-10 tile">
+        <div class="row tile-header">
+            <div class="col">{{ title }}</div>
+        </div>
+        <div class="row font-weight-bold justify-content-center" style="min-height: 130px">
+            <div class="col-11">
+                <div class="row justify-content-center border-bottom">
+                    <table class="table table-borderless table-sm col-11">
+                        <tr>
+                            {% for header in headers %}
+                                <td class="text-left">{{ header }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% for obj in rows %}
+                            <tr style="height: 50px;">
+                                <td class="text-left">{{ obj.event_name }}</td>
+                                <td class="text-left">{{ obj.event_date }}</td>
+                                {% if obj.event_time is None %}
+                                    <td class="text-left"></td>
+                                {% else %}
+                                    <td class="text-left">{{ obj.event_time }}</td>
+                                {% endif %}
+                                {% if obj.event_location is None %}
+                                    <td class="text-left"></td>
+                                {% else %}
+                                    <td class="text-left">{{ obj.event_location }}</td>
+                                {% endif %}
+                                {% if link_address and link_text and obj.mu_required %}
+                                    <td class="text-left">
+                                        <a href="{{ link_address }}{{ obj.attendance_link_address }}">{{ link_text }}</a>
+                                    </td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

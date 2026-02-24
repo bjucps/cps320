@@ -1,0 +1,60 @@
+<!--    month; [Month_Page] -->
+
+<style>
+    .calendar-day {
+        width: 150px;
+        height: 75px;
+        padding: 10px;
+        border: 1px solid gray;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .calender_header {
+        font-size: xxx-large;
+        font-weight: 700;
+    }
+    .calendar_nav button {
+        margin-left: 5px;
+        padding: 5px 10px;
+        font-size: 1rem;
+        cursor: pointer;
+}
+</style>
+
+<header class="calender_header">{{ month.month_name }}, {{ month.year }}</header>
+<div class="calendar_nav">
+    <a href="{% url 'HelloWorld:prev_month' %}"><button class="my_button">←</button></a>
+    <a href="{% url 'HelloWorld:next_month' %}"><button class="my_button">→</button></a>
+    <a href="{% url 'HelloWorld:reset_month' %}"><button class="my_button">Reset</button></a>
+</div>
+
+<table>
+<thead>
+    <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+</thead>
+<tbody>
+    {% for week in month.weeks %}
+        <tr>
+            {% for day in week %}
+                <td>
+                    <div class="calendar-day" style="background-color: rgb{{ day.color }};"> <!-- ignore the error, this actually works-->
+                        {{ day.day_num }}
+                        {% for e in day.events %}
+                            <p><a href="{% url 'HelloWorld:attendance' e.attendance_link_address %}" style="line-height: .25;">{{ e.event_name }}</a></p>
+                        {% endfor %}
+                    </div>
+                </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</tbody>
+</table>

@@ -1,0 +1,60 @@
+<!--    events_headers [list of events table headers];
+        events [list of event objects] -->
+
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" href="css/stylesheet.css">
+            
+            <title>Arts & Cultures App</title>
+
+        <style>
+            .tile {
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 13pt;
+            border: 1pt solid #001b41;
+            text-align: center;
+            }
+            .tile-header {
+                background-color: #001b41;
+                color: white;
+                font-size: 16pt;
+                border-top-right-radius: 18px;
+                border-top-left-radius: 18px;
+            }
+            .my_header {
+                font-size: x-large;
+                text-align: center;
+                font-weight: 700;
+            }
+        </style>
+
+        </head>
+
+        <body>
+
+            <header class="my_header">Upcoming Events</header>
+
+            <!-- <a href="{% url 'home' %}"><button class="my_button">Home</button></a> -->
+            <a href="{% url 'HelloWorld:calendar' %}"><button class="my_button">Full Calendar</button></a>
+            <div class="calendar_nav">
+                <a href="{% url 'HelloWorld:prev_table' %}"><button class="my_button">←</button></a>
+                <a href="{% url 'HelloWorld:next_table' %}"><button class="my_button">→</button></a>
+                <a href="{% url 'HelloWorld:reset_table' %}"><button class="my_button">Reset</button></a>
+            </div>
+
+            {% include "_event_table.html" with width="10" title="Events" headers=events_headers rows=events link_address="attendance/" link_text="Record Attendance" %}
+
+        </body>
+
+        <footer class="footer">
+        <div class="container" id="footer">
+            <span>© 2025 Bob Jones University</span>
+        </div>
+    </footer>
+    </html>

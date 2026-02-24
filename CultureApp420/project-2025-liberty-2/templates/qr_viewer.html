@@ -1,0 +1,47 @@
+<!--    events_headers [list of events table headers];
+        events [list of event objects] -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <title>Arts & Cultures App</title>
+
+        <style>
+            .my_header {
+                font-size: x-large;
+                text-align: center;
+                font-weight: 700;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header class="my_header">Attendance QR Code</header>
+
+        <a href="{% url 'home' %}"><button class="my_button">Home</button></a>
+
+        <a></a>
+
+        <div>
+            {% load static %}
+            <img src="{% static image %}" alt="Testing image" class="center">
+        </div>
+    </body>
+
+    <footer class="footer">
+        <div class="container" id="footer">
+            <span>© 2025 Bob Jones University</span>
+        </div>
+    </footer>
+</html>
