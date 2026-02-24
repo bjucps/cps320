@@ -1,0 +1,4165 @@
+{
+ "kind": "calendar#events",
+ "etag": "\"p32vof9f2t3nou0o\"",
+ "summary": "Fine Arts",
+ "description": "Art Exhibit; Concert; Recital; Theatre; Concert, Opera & Drama Series",
+ "updated": "2025-09-23T21:23:32.304Z",
+ "timeZone": "America/New_York",
+ "accessRole": "reader",
+ "defaultReminders": [],
+ "items": [
+  {
+   "kind": "calendar#event",
+   "etag": "\"3508103950433854\"",
+   "id": "d2uat7g5jn7qodnb01k7a8rmn8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZDJ1YXQ3ZzVqbjdxb2RuYjAxazdhOHJtbjggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-03-22T18:30:21.000Z",
+   "updated": "2025-08-01T12:39:35.216Z",
+   "summary": "Season Ticket Package Sales Begin for Concert, Opera & Drama Series",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-08-04"
+   },
+   "end": {
+    "date": "2025-08-05"
+   },
+   "iCalUID": "d2uat7g5jn7qodnb01k7a8rmn8@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": ""
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3508103991190750\"",
+   "id": "qtss8o730q4n1m5vb0cntasdec",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cXRzczhvNzMwcTRuMW01dmIwY250YXNkZWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-03-22T18:30:21.000Z",
+   "updated": "2025-08-01T12:39:55.595Z",
+   "summary": "Guest Ticket Sales Begin for Concert, Opera & Drama Series",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-08-27"
+   },
+   "end": {
+    "date": "2025-08-28"
+   },
+   "iCalUID": "qtss8o730q4n1m5vb0cntasdec@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": ""
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3512973907557310\"",
+   "id": "0n78d7ie3dsll9g0473ekmjvck",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MG43OGQ3aWUzZHNsbDlnMDQ3M2VrbWp2Y2sgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-08-29T17:02:08.000Z",
+   "updated": "2025-08-29T17:02:33.778Z",
+   "summary": "A+D Exhibition: Permanent Collection + Faculty",
+   "description": "Exhibition on display through Oct. 4",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-09-02"
+   },
+   "end": {
+    "date": "2025-09-03"
+   },
+   "iCalUID": "0n78d7ie3dsll9g0473ekmjvck@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "Exhibition Corridor",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": ""
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3512974103324126\"",
+   "id": "h19rjvg7v0cev6gtcihhb92nc8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aDE5cmp2Zzd2MGNldjZndGNpaGhiOTJuYzggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-03-22T18:30:22.000Z",
+   "updated": "2025-08-29T17:04:11.662Z",
+   "summary": "Student COD Series eTickets Begin: Ilya Yakushev",
+   "description": "Students secure tickets online for event.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-09-03"
+   },
+   "end": {
+    "date": "2025-09-04"
+   },
+   "iCalUID": "h19rjvg7v0cev6gtcihhb92nc8@google.com",
+   "sequence": 8,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3514883327542910\"",
+   "id": "6dnu8cbblt606nlf92tdrhgsv4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NmRudThjYmJsdDYwNm5sZjkydGRyaGdzdjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:48:20.000Z",
+   "updated": "2025-09-09T18:14:23.771Z",
+   "summary": "COD Series: Pre-Concert Talk",
+   "description": "Music historian, Dr. Paul Overly, will present the historical and musical context behind Ilya Yakushev's repertoire.",
+   "location": "Levinson Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-18T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-18T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "6dnu8cbblt606nlf92tdrhgsv4@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504004675338974\"",
+   "id": "fc4e8sckjmlorthpq32sh88jh0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZmM0ZThzY2tqbWxvcnRocHEzMnNoODhqaDAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-10-14T12:56:55.000Z",
+   "updated": "2025-07-08T19:18:57.669Z",
+   "summary": "COD Series:  Ilya Yakushev",
+   "description": "Join us as acclaimed pianist Ilya Yakushev brings his warmth, charisma, and mastery of iconic classical pieces to our audience. Works will range from Beethoven and Mozart to Rachmaninoff and Liszt.",
+   "location": "Founder's Memorial Amphitorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-18T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-18T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "fc4e8sckjmlorthpq32sh88jh0@google.com",
+   "sequence": 8,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3515194141519614\"",
+   "id": "dr30n1i3kv5c954lqdiekulmsg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZHIzMG4xaTNrdjVjOTU0bHFkaWVrdWxtc2cgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-10-14T12:56:57.000Z",
+   "updated": "2025-09-11T13:24:30.759Z",
+   "summary": "Bake-Off! New Play Festival",
+   "description": "A Theatre event for students to write, direct, and perform an original work in 24 hours.\r\n\r\nTickets are $4 at the door.\r\n",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-20T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-20T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "dr30n1i3kv5c954lqdiekulmsg@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3515194111768414\"",
+   "id": "vqcv2o1u9so906b2j1olve2dek",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dnFjdjJvMXU5c285MDZiMmoxb2x2ZTJkZWsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-10-14T12:56:56.000Z",
+   "updated": "2025-09-11T13:24:15.884Z",
+   "summary": "Bake-Off! New Play Festival",
+   "description": "A Theatre event for students to write, direct, and perform an original work in 24 hours.\r\n\r\nTickets are $4 at the door.",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-20T20:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-20T20:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "vqcv2o1u9so906b2j1olve2dek@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3512974073991934\"",
+   "id": "lip5l41st9ckedcb6addevvhfk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bGlwNWw0MXN0OWNrZWRjYjZhZGRldnZoZmsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-12T16:22:12.000Z",
+   "updated": "2025-08-29T17:03:56.995Z",
+   "summary": "Student COD Series eTickets Begin: BJU Orchestra with David Kim",
+   "description": "Students secure tickets online for event.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-09-23"
+   },
+   "end": {
+    "date": "2025-09-24"
+   },
+   "iCalUID": "lip5l41st9ckedcb6addevvhfk@google.com",
+   "sequence": 6,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504004723465374\"",
+   "id": "qsg2e3dlht2vrlreue19evcefg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cXNnMmUzZGxodDJ2cmxyZXVlMTlldmNlZmcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:51:24.000Z",
+   "updated": "2025-07-08T19:19:21.732Z",
+   "summary": "University Symphonic Wind Band",
+   "description": "Bring your picnic dinner and join this fall tradition with music by Reed, Jager, and Sousa at the Gazebo with the Symphonic Wind Band. In the case of inclement weather, we’ll move inside to Stratton Hall.",
+   "location": "Gazebo",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-26T18:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-26T18:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "qsg2e3dlht2vrlreue19evcefg@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3515026728469662\"",
+   "id": "4f3iooicdbf9eu9fd1e85om9eg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NGYzaW9vaWNkYmY5ZXU5ZmQxZTg1b205ZWcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-08T18:19:59.000Z",
+   "updated": "2025-09-10T14:09:24.234Z",
+   "summary": "Argus & the Maze of Myth ",
+   "description": "A special encore performance to highlight and support the work at Piedmont Women's Center.\r\n \r\nPiedmont Women's Center is a pro-life pregnancy medical clinic that provides free gospel-centered medical and support services for women facing an unplanned pregnancy.\r\n\r\nProceeds from this performance will support the mission and work of Piedmont Women's Center.\r\n\r\nA Medieval comedy, Argus and the Maze of Myth follows young Argus, a cowardly squire who dreams of becoming a knight. He serves under the proud yet clumsy knight, Sir William. Their mission: to save the Fair Maiden trapped within the labyrinth. This journey is anything but a brisk walk in the meadows. They will encounter mythical creatures, secrets, and even a little goat. Join in the adventure as they brave the Maze of Myth!",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-26T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-26T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "4f3iooicdbf9eu9fd1e85om9eg@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3515026745687870\"",
+   "id": "1orqig5t4ruicff20413b2ui1k",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MW9ycWlnNXQ0cnVpY2ZmMjA0MTNiMnVpMWsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-08T18:20:21.000Z",
+   "updated": "2025-09-10T14:09:32.843Z",
+   "summary": "Argus & the Maze of Myth ",
+   "description": "A special encore performance to highlight and support the work at Piedmont Women's Center.\r\n \r\nPiedmont Women's Center is a pro-life pregnancy medical clinic that provides free gospel-centered medical and support services for women facing an unplanned pregnancy.\r\n\r\nProceeds from this performance will support the mission and work of Piedmont Women's Center.\r\n\r\nA Medieval comedy, Argus and the Maze of Myth follows young Argus, a cowardly squire who dreams of becoming a knight. He serves under the proud yet clumsy knight, Sir William. Their mission: to save the Fair Maiden trapped within the labyrinth. This journey is anything but a brisk walk in the meadows. They will encounter mythical creatures, secrets, and even a little goat. Join in the adventure as they brave the Maze of Myth!",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-09-27T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-09-27T20:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "1orqig5t4ruicff20413b2ui1k@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513863189302846\"",
+   "id": "pkjaadgcfr8vllsolmqe2n3t7k",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cGtqYWFkZ2Nmcjh2bGxzb2xtcWUybjN0N2sgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-03T20:32:49.000Z",
+   "updated": "2025-09-03T20:33:14.651Z",
+   "summary": "Rivertree Singers Ensemble in Residence",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-04T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-04T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "pkjaadgcfr8vllsolmqe2n3t7k@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3517325224609662\"",
+   "id": "kphusbgbo3ctrqv0q8ur46dh80",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a3BodXNiZ2JvM2N0cnF2MHE4dXI0NmRoODAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:53:11.000Z",
+   "updated": "2025-09-23T21:23:32.304Z",
+   "summary": "COD Series: Pre-Concert Talk",
+   "description": "Music historian, Dr. Paul Overly, will present the historical and musical context behind the evening's repertoire.\r\n\r\nConcert, Opera & Drama Series",
+   "location": "Levinson Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-07T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-07T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "kphusbgbo3ctrqv0q8ur46dh80@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3511768416720382\"",
+   "id": "roph3s5r3rbnf3fr0sncgcipis",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cm9waDNzNXIzcmJuZjNmcjBzbmNnY2lwaXMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-01-08T19:51:08.000Z",
+   "updated": "2025-08-22T17:36:48.360Z",
+   "summary": "COD Series:  University Symphony Orchestra with David Kim",
+   "description": "David Kim, concertmaster of The Philadelphia Orchestra, returns to solo with the BJUSO, performing Tchaikovsky’s Violin Concerto. This concert of concertos will also feature student winners of our annual concerto and aria competition. Michael Moore, conductor.",
+   "location": "Founder's Memorial Amphitorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-07T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-07T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "roph3s5r3rbnf3fr0sncgcipis@google.com",
+   "sequence": 7,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496873759734430\"",
+   "id": "7tl2jpp1oramdh7pk9ch9b7e1s",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=N3RsMmpwcDFvcmFtZGg3cGs5Y2g5YjdlMXMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:54:39.000Z",
+   "updated": "2025-05-28T12:54:39.867Z",
+   "summary": "A+D Artist’s Talk",
+   "location": "Levinson Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-10T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-10T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "7tl2jpp1oramdh7pk9ch9b7e1s@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3500227427525982\"",
+   "id": "ren2oahqnl6ud0rm9h1lq17h20",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cmVuMm9haHFubDZ1ZDBybTloMWxxMTdoMjAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:55:27.000Z",
+   "updated": "2025-06-16T22:41:53.762Z",
+   "summary": "A+D Exhibition: Opening",
+   "description": "(Displayed October 10 – November 21)",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-10T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-10T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "ren2oahqnl6ud0rm9h1lq17h20@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005010998398\"",
+   "id": "9t1atdm687mmibbk5tgnp47890",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OXQxYXRkbTY4N21taWJiazV0Z25wNDc4OTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-07-08T19:21:15.000Z",
+   "updated": "2025-07-08T19:21:45.499Z",
+   "summary": "Faculty Recital: Isaac Greene & Nathan MacAvoy",
+   "description": "Join Drs. Nathan MacAvoy and Isaac Greene of the Division of Music for a dynamic program of chamber music for the unusual combination of guitar and piano or guitar and harpsichord. Featuring four works of the 20th century, this program is sure to introduce you to something new and exciting.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-25T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-25T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "9t1atdm687mmibbk5tgnp47890@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005256176766\"",
+   "id": "onghjkhl3guj1i549os04j0oto",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=b25naGpraGwzZ3VqMWk1NDlvczA0ajBvdG8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:57:37.000Z",
+   "updated": "2025-07-08T19:23:48.088Z",
+   "summary": "Play: Sorry, Wrong Number & Blind Date",
+   "description": "Two one-act plays presented by the Theatre department. Sorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own. Blind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece. Both productions are produced by special arrangement with Dramatists Play Service www.dramatists.com.",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-28T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-28T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "onghjkhl3guj1i549os04j0oto@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005296953662\"",
+   "id": "fuvnslu3a53dleqn25pe8fbjuc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZnV2bnNsdTNhNTNkbGVxbjI1cGU4ZmJqdWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:00:37.000Z",
+   "updated": "2025-07-08T19:24:08.476Z",
+   "summary": "Woodwind Ensembles",
+   "description": "This eclectic chamber music program is presented by student ensembles under the guidance of the Woodwind faculty.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-29T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-29T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "fuvnslu3a53dleqn25pe8fbjuc@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005215935294\"",
+   "id": "0gfu1is6h43pe0a4n2u183jld4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MGdmdTFpczZoNDNwZTBhNG4ydTE4M2psZDQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-12T16:22:14.000Z",
+   "updated": "2025-07-08T19:23:27.967Z",
+   "summary": "Play: Sorry, Wrong Number & Blind Date",
+   "description": "Two one-act plays presented by the Theatre department. Sorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own. Blind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece. Both productions are produced by special arrangement with Dramatists Play Service www.dramatists.com.",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-30T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-30T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "0gfu1is6h43pe0a4n2u183jld4@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3516237495743198\"",
+   "id": "tsp20c3o47ctbaigooe7bui0rs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dHNwMjBjM280N2N0YmFpZ29vZTdidWkwcnMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:01:21.000Z",
+   "updated": "2025-09-17T14:19:07.871Z",
+   "summary": "Brass Choir",
+   "description": "Let the BJU Brass Choir brighten your day with Renaissance music by Sir John Bull, antiphonal music by Palestrina, Benjamin Britten’s ‘Russian Funeral’ and favorite melodies of Stephen Foster. \r\n\r\n",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-31T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-31T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "tsp20c3o47ctbaigooe7bui0rs@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513863485005406\"",
+   "id": "8vim3g4kti45kgk64t8bhtgkn4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OHZpbTNnNGt0aTQ1a2drNjR0OGJodGdrbjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:01:58.000Z",
+   "updated": "2025-09-03T20:35:42.502Z",
+   "summary": "Chorale",
+   "description": "The Chorale will present its fall program, entitled All Nature Sings, drawing attention to the beauty and joy found in the created world and ultimately pointing us to the Creator. Featuring works by Le Jeune, Brahms, Runestad, Ešenvalds, and others.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-31T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-31T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "8vim3g4kti45kgk64t8bhtgkn4@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005233000990\"",
+   "id": "rgvpid2hkr04659udlrnd96d0k",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cmd2cGlkMmhrcjA0NjU5dWRscm5kOTZkMGsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:59:10.000Z",
+   "updated": "2025-07-08T19:23:36.500Z",
+   "summary": "Play: Sorry, Wrong Number & Blind Date",
+   "description": "Two one-act plays presented by the Theatre department. Sorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own. Blind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece. Both productions are produced by special arrangement with Dramatists Play Service www.dramatists.com.",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-10-31T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-10-31T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "rgvpid2hkr04659udlrnd96d0k@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005242831678\"",
+   "id": "u73qad8r1kdmn1sdgd2o8ibmc4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dTczcWFkOHIxa2RtbjFzZGdkMm84aWJtYzQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T12:59:33.000Z",
+   "updated": "2025-07-08T19:23:41.415Z",
+   "summary": "Play: Sorry, Wrong Number & Blind Date",
+   "description": "Two one-act plays presented by the Theatre department. Sorry, Wrong Number follows the tale of a fearful invalid, whose only contact with the outside world is her phone. One night, because of a crossed wire, she hears plans for a murder which turns out to be her own. Blind Date is touching and very funny study of what befalls a fluttery, well-meaning aunt when she tries to arrange a date for her visiting (and uncooperative) niece. Both productions are produced by special arrangement with Dramatists Play Service www.dramatists.com.",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-01T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-01T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "u73qad8r1kdmn1sdgd2o8ibmc4@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341162490302\"",
+   "id": "hfmvs09nc6vrqtsegvh70v38i8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aGZtdnMwOW5jNnZycXRzZWd2aDcwdjM4aTggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:11:00.000Z",
+   "updated": "2025-05-13T21:09:41.245Z",
+   "summary": "Student COD Series eTickets Begin: King Lear",
+   "description": "Students secure tickets online for event.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2025-11-03"
+   },
+   "end": {
+    "date": "2025-11-04"
+   },
+   "iCalUID": "hfmvs09nc6vrqtsegvh70v38i8@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": ""
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496879475986558\"",
+   "id": "oebhg0eltfccekljl65vkgu1v4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=b2ViaGcwZWx0ZmNjZWtsamw2NXZrZ3UxdjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:11:11.000Z",
+   "updated": "2025-05-28T13:42:17.993Z",
+   "summary": "HS Festival: Kaleidoscope Concert",
+   "description": "An exciting, fast-moving concert featuring student soloists and ensembles from the Division of Music at BJU.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-04T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-04T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "oebhg0eltfccekljl65vkgu1v4@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496879462437534\"",
+   "id": "lpse6pef6itf7uqld7mserav1g",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bHBzZTZwZWY2aXRmN3VxbGQ3bXNlcmF2MWcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:47:33.000Z",
+   "updated": "2025-05-28T13:42:11.218Z",
+   "summary": "HS Festival: Theatre Department Showcase",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-04T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-04T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "lpse6pef6itf7uqld7mserav1g@google.com",
+   "sequence": 6,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3516446264610782\"",
+   "id": "fl4fc00fpre1bb1boh7makk7as",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Zmw0ZmMwMGZwcmUxYmIxYm9oN21ha2s3YXMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-18T19:18:37.000Z",
+   "updated": "2025-09-18T19:18:52.305Z",
+   "summary": "Senior Violin Recital: Eric Probus ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-10T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-10T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "fl4fc00fpre1bb1boh7makk7as@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504005844245694\"",
+   "id": "00a8uuhk89p4uv0889hftsptlc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MDBhOHV1aGs4OXA0dXYwODg5aGZ0c3B0bGMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-07-08T19:28:20.000Z",
+   "updated": "2025-07-08T19:28:42.122Z",
+   "summary": "University Singers",
+   "description": "Join the University Singers, Bob Jones University’s dynamic freshman choir, for an inspiring evening of choral music. Composed of first-year students from a variety of majors, these musicians offer a heartfelt performance that reflects their developing artistry and shared love of choral singing.  ",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-12T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-12T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "00a8uuhk89p4uv0889hftsptlc@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496874947024126\"",
+   "id": "lgk665klt1813225o9qmhgulqc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bGdrNjY1a2x0MTgxMzIyNW85cW1oZ3VscWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:04:33.000Z",
+   "updated": "2025-05-28T13:04:33.512Z",
+   "summary": "COD Series: Pre-Show Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-14T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-14T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "lgk665klt1813225o9qmhgulqc@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006320513022\"",
+   "id": "eqatt6hke97d7oj748tehb5n20",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZXFhdHQ2aGtlOTdkN29qNzQ4dGVoYjVuMjAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:14:21.000Z",
+   "updated": "2025-07-08T19:32:40.256Z",
+   "summary": "COD Series:  King Lear",
+   "description": "BJU’s 96-year-old Classical Theatre Troupe, Classic Players, presents Shakespeare’s King Lear. Family, politics and lies collide in one of Shakespeare’s greatest tragedies. King Lear chronicles King Lear’s decision to divide his kingdom among his three daughters and the disaster that follows.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-14T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-14T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "eqatt6hke97d7oj748tehb5n20@google.com",
+   "sequence": 6,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series;"
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006591047902\"",
+   "id": "b8fsi7vh51u0rdjsd50t5d04s4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Yjhmc2k3dmg1MXUwcmRqc2Q1MHQ1ZDA0czQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:14:22.000Z",
+   "updated": "2025-07-08T19:34:55.523Z",
+   "summary": "Educational Performance: King Lear",
+   "description": "Intended for students age 12+ and their primary educators. Contact Programs & Productions to secure tickets, (864) 770-1372 or in person.  \r\n\r\nOnline ticketing is not available.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-17T10:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-17T10:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "b8fsi7vh51u0rdjsd50t5d04s4@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864877178782\"",
+   "id": "j0p5qe3pcok66to1odutljmtgk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ajBwNXFlM3Bjb2s2NnRvMW9kdXRsam10Z2sgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-03T20:47:18.000Z",
+   "updated": "2025-09-03T20:47:18.589Z",
+   "summary": "Concert Choir",
+   "description": "Join the BJU Concert Choir under the direction of Laura Brundage for “Simple Gifts.” From the rolling hills of Appalachia to the Windswept Highlands of Scotland, this program weaves together folk tunes, spirituals, and lyrical settings that speak to love, longing, and joy. Featuring works by John Rutter, Bob Chilcott, Stephen Paulus, Rene´ Clausen, and others, Simple Gifts invites you into a world where music honors tradition, stirs the soul, and uplifts the heart.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-17T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-17T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "j0p5qe3pcok66to1odutljmtgk@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006345889982\"",
+   "id": "dghevuopeg262f3a4rs4msi9qo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZGdoZXZ1b3BlZzI2MmYzYTRyczRtc2k5cW8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:14:20.000Z",
+   "updated": "2025-07-08T19:32:52.944Z",
+   "summary": "COD Series:  King Lear",
+   "description": "BJU’s 96-year-old Classical Theatre Troupe, Classic Players, presents Shakespeare’s King Lear. Family, politics and lies collide in one of Shakespeare’s greatest tragedies. King Lear chronicles King Lear’s decision to divide his kingdom among his three daughters and the disaster that follows.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-18T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-18T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "dghevuopeg262f3a4rs4msi9qo@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006358871646\"",
+   "id": "2j3k610q2p6sp6nqka2vfoni38",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=MmozazYxMHEycDZzcDZucWthMnZmb25pMzggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:14:21.000Z",
+   "updated": "2025-07-08T19:32:59.435Z",
+   "summary": "COD Series:  King Lear",
+   "description": "BJU’s 96-year-old Classical Theatre Troupe, Classic Players, presents Shakespeare’s King Lear. Family, politics and lies collide in one of Shakespeare’s greatest tragedies. King Lear chronicles King Lear’s decision to divide his kingdom among his three daughters and the disaster that follows.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-11-20T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-11-20T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "2j3k610q2p6sp6nqka2vfoni38@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513863645375870\"",
+   "id": "fibedprauvh0n0ln5rh6ojuh80",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZmliZWRwcmF1dmgwbjBsbjVyaDZvanVoODAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:07:09.000Z",
+   "updated": "2025-09-03T20:37:02.687Z",
+   "summary": "Chamber Singers",
+   "description": "Join the Chamber Singers for a beautiful and engaging program of texts and tunes celebrating the wonder and delight of the Christmas season.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-05T17:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-05T17:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "fibedprauvh0n0ln5rh6ojuh80@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3500227427525982\"",
+   "id": "u0k47dsa4hd89n76s2ghakmvrs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dTBrNDdkc2E0aGQ4OW43NnMyZ2hha212cnMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:06:21.000Z",
+   "updated": "2025-06-16T22:41:53.762Z",
+   "summary": "A+D Legacy Exhibition Opening: Emory Bopp ",
+   "description": "(Displayed December 5 – February 14)",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-05T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-05T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "u0k47dsa4hd89n76s2ghakmvrs@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006717611006\"",
+   "id": "eno7j1gvfsn6rgp1gfna0ck28c",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZW5vN2oxZ3Zmc242cmdwMWdmbmEwY2syOGMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2024-12-16T15:28:33.000Z",
+   "updated": "2025-07-08T19:35:58.805Z",
+   "summary": "University Symphony Orchestra",
+   "description": "Celebrate the Christmas season with “Carols and Classics,” a festive holiday program featuring symphonic seasonal favorites. Michael Moore, conductor.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-05T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-05T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "eno7j1gvfsn6rgp1gfna0ck28c@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3516446392010110\"",
+   "id": "p0nkc44pfbtpno7mqo5bi1k0ro",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cDBua2M0NHBmYnRwbm83bXFvNWJpMWswcm8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-18T19:19:55.000Z",
+   "updated": "2025-09-18T19:19:56.005Z",
+   "summary": "Senior Piano Recital: Ling Zhou ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-06T13:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-06T13:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "p0nkc44pfbtpno7mqo5bi1k0ro@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504006781428958\"",
+   "id": "3uqdecc7dprekdbubvoqg8altk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M3VxZGVjYzdkcHJla2RidWJ2b3FnOGFsdGsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:09:20.000Z",
+   "updated": "2025-07-08T19:36:30.714Z",
+   "summary": "String Chamber Recital",
+   "description": "The Department of Instrumental Studies presents its string majors in chamber ensembles with varying instrumentations—including string quartets and piano trios and quintets. ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-06T15:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-06T15:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3uqdecc7dprekdbubvoqg8altk@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007019319710\"",
+   "id": "g70t3h7np00cfrnk8p67jv9dbk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZzcwdDNoN25wMDBjZnJuazhwNjdqdjlkYmsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:10:39.000Z",
+   "updated": "2025-07-08T19:38:29.659Z",
+   "summary": "University Symphonic Wind Band",
+   "description": "Carols and Classics-Christmas is coming! Enjoy this blending of British Band classics by Gustav Holst and Haydn Wood with carols and traditional holiday favorites.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-11T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-11T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "g70t3h7np00cfrnk8p67jv9dbk@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3515875913335998\"",
+   "id": "b4okdb4uukvjreai7cm76tvmtk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjRva2RiNHV1a3ZqcmVhaTdjbTc2dHZtdGsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-15T12:05:56.000Z",
+   "updated": "2025-09-15T12:05:56.667Z",
+   "summary": "Senior Voice Recital: Kendall O'Neill",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-12T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-12T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "b4okdb4uukvjreai7cm76tvmtk@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/fine-arts/",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007428299102\"",
+   "id": "lpg4vrll0dhosnjv2fuf0hhajo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bHBnNHZybGwwZGhvc25qdjJmdWYwaGhham8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-07-08T19:40:28.000Z",
+   "updated": "2025-07-08T19:41:54.149Z",
+   "summary": "Opera Workshop Performance",
+   "description": "Ahoy, mateys! Join our talented students for a rollicking performance of The Pirates of Penzance!  This beloved Gilbert and Sullivan classic promises an afternoon and evening full of laughter, lively music, and swashbuckling fun. Don’t miss the adventure—fun for the whole family!",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-13T15:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-13T15:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "lpg4vrll0dhosnjv2fuf0hhajo@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007194596318\"",
+   "id": "luppehm1lp88qfgg6r6odaq1b0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bHVwcGVobTFscDg4cWZnZzZyNm9kYXExYjAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:11:57.000Z",
+   "updated": "2025-07-08T19:39:57.298Z",
+   "summary": "Opera Workshop Performance",
+   "description": "Ahoy, mateys! Join our talented students for a rollicking performance of The Pirates of Penzance!  This beloved Gilbert and Sullivan classic promises an afternoon and evening full of laughter, lively music, and swashbuckling fun. Don’t miss the adventure—fun for the whole family!",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-13T18:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-13T18:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "luppehm1lp88qfgg6r6odaq1b0@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007464403358\"",
+   "id": "jbv9l8357j6gv9bihdbc306uls",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=amJ2OWw4MzU3ajZndjliaWhkYmMzMDZ1bHMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:12:41.000Z",
+   "updated": "2025-07-08T19:42:12.201Z",
+   "summary": "Student Composition Recital",
+   "description": "The University family is invited to hear this recital of music composition students’ best original works.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2025-12-16T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2025-12-16T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "jbv9l8357j6gv9bihdbc306uls@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341271430366\"",
+   "id": "ml6cpfrinkgas8554stbjhog38",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bWw2Y3Bmcmlua2dhczg1NTRzdGJqaG9nMzggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-03-13T23:43:14.000Z",
+   "updated": "2025-05-13T21:10:35.715Z",
+   "summary": "Student COD Series eTickets Begin:  Spanish Brass",
+   "description": "Students secure tickets online for event.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2026-01-14"
+   },
+   "end": {
+    "date": "2026-01-15"
+   },
+   "iCalUID": "ml6cpfrinkgas8554stbjhog38@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876025997950\"",
+   "id": "bs6jntdvlf94csah2cdgr2mm8s",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YnM2am50ZHZsZjk0Y3NhaDJjZGdyMm1tOHMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:13:32.000Z",
+   "updated": "2025-05-28T13:13:32.998Z",
+   "summary": "COD Series: Pre-Concert Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-01-29T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-01-29T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "bs6jntdvlf94csah2cdgr2mm8s@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504010713631134\"",
+   "id": "3m8k4vhkgsdb5m563n1d5ng9e0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M204azR2aGtnc2RiNW01NjNuMWQ1bmc5ZTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-03-13T23:43:15.000Z",
+   "updated": "2025-07-08T20:09:16.815Z",
+   "summary": "COD Series: Spanish Brass",
+   "description": "Hailing from Valencia, Spain, the Spanish Brass will bring dynamic flair and exquisite musicianship to the stage. Classical chamber pieces, traditional Spanish melodies, and a few surprises promise to elevate and inspire.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-01-29T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-01-29T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3m8k4vhkgsdb5m563n1d5ng9e0@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876133545662\"",
+   "id": "3d0sb3aoccp3c8fldpkipj81a0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M2Qwc2IzYW9jY3AzYzhmbGRwa2lwajgxYTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:14:15.000Z",
+   "updated": "2025-05-28T13:14:26.772Z",
+   "summary": "A+D Art & Life Legacy Panel",
+   "location": "Levinson Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-01-30T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-01-30T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3d0sb3aoccp3c8fldpkipj81a0@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341287850366\"",
+   "id": "g555vvb6m6v11ipl4eu8nfooqg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZzU1NXZ2YjZtNnYxMWlwbDRldThuZm9vcWcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-03-14T00:39:21.000Z",
+   "updated": "2025-05-13T21:10:43.925Z",
+   "summary": "Student COD Series eTickets Begin: The Elixir of Love",
+   "description": "Students secure tickets online for event.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2026-02-12"
+   },
+   "end": {
+    "date": "2026-02-13"
+   },
+   "iCalUID": "g555vvb6m6v11ipl4eu8nfooqg@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "Programs & Productions",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007719829342\"",
+   "id": "v45tk7da2b326db7t647gr7c2o",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=djQ1dGs3ZGEyYjMyNmRiN3Q2NDdncjdjMm8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:15:10.000Z",
+   "updated": "2025-07-08T19:44:19.914Z",
+   "summary": "University Symphonic Wind Band",
+   "description": "Music of noted American composers past and present-Grantham, Curnow, Gould, and Giroux-is featured on this spring program of the Symphonic Wind Band.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-13T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-13T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "v45tk7da2b326db7t647gr7c2o@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513863835921662\"",
+   "id": "q8jgur84pp8sca95b22mdglfqc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cThqZ3VyODRwcDhzY2E5NWIyMm1kZ2xmcWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:15:37.000Z",
+   "updated": "2025-09-03T20:38:37.960Z",
+   "summary": "Rivertree Singers Ensemble in Residence",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-14T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-14T19:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "q8jgur84pp8sca95b22mdglfqc@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876387143230\"",
+   "id": "g06rfrsoqlsfanjq21q8r3bnd8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZzA2cmZyc29xbHNmYW5qcTIxcThyM2JuZDggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:16:33.000Z",
+   "updated": "2025-05-28T13:16:33.571Z",
+   "summary": "A+D Professional Portfolio Exhibition Opening",
+   "description": "(Displayed February 20 – March 20)",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-20T18:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-20T18:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "g06rfrsoqlsfanjq21q8r3bnd8@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007559822526\"",
+   "id": "hchu3u9c8cladj24tkipit4hsg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aGNodTN1OWM4Y2xhZGoyNHRraXBpdDRoc2cgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:17:28.000Z",
+   "updated": "2025-07-08T19:42:59.911Z",
+   "summary": "Harp Ensemble",
+   "description": "Enjoy the beauty of multiple harps as the Chamber harp ensemble performs their spring concert, directed by Emily Waggoner.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-25T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-25T17:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "hchu3u9c8cladj24tkipit4hsg@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007790799038\"",
+   "id": "3pos6sckjat615ji7rjo3rth9s",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M3BvczZzY2tqYXQ2MTVqaTdyam8zcnRoOXMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:24:13.000Z",
+   "updated": "2025-07-08T19:44:55.399Z",
+   "summary": "Educational Performance: The Elixir of Love",
+   "description": "Intended for students age 12+ and their primary educators. Contact Programs & Productions to secure tickets, (864) 770-1372 or in person.  \r\n\r\nOnline ticketing is not available.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-26T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-26T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3pos6sckjat615ji7rjo3rth9s@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504010659245598\"",
+   "id": "sd9and25amnit08trnv0ar392o",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=c2Q5YW5kMjVhbW5pdDA4dHJudjBhcjM5Mm8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:18:22.000Z",
+   "updated": "2025-07-08T20:08:49.622Z",
+   "summary": "Faculty Recital: Jonathan Simmons & Matthew Camastro",
+   "description": "Jonathan Simmons, cello, and Matthew Camastro, piano, present a faculty recital featuring music of American composers in celebration of the USA’s 250th anniversary.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-02-28T17:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-02-28T17:00:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "sd9and25amnit08trnv0ar392o@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876724247326\"",
+   "id": "7r51ejjddn26i9fb2brfstp99o",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=N3I1MWVqamRkbjI2aTlmYjJicmZzdHA5OW8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:19:21.000Z",
+   "updated": "2025-05-28T13:19:22.123Z",
+   "summary": "COD Series: Pre-Show Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-03T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-03T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "7r51ejjddn26i9fb2brfstp99o@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007957916286\"",
+   "id": "d7963tvfdicd6u6p87lr6kntao",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZDc5NjN0dmZkaWNkNnU2cDg3bHI2a250YW8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:24:09.000Z",
+   "updated": "2025-07-08T19:46:18.958Z",
+   "summary": "COD Series:  The Elixir of Love",
+   "description": "BJU’s renowned Opera Association will present The Elixir of Love by Donzetti. An unobtainable lady, a hopelessly lovestruck peasant, and a sweet-talking con man are the key ingredients in this comic opera (to be performed in English).",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-03T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-03T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "d7963tvfdicd6u6p87lr6kntao@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "Showpass Ticketing",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876785406398\"",
+   "id": "bfumjpclssjk6mq6rh8vt5eeo4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YmZ1bWpwY2xzc2prNm1xNnJoOHZ0NWVlbzQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:19:52.000Z",
+   "updated": "2025-05-28T13:19:52.703Z",
+   "summary": "COD Series: Pre-Show Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-05T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-05T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "bfumjpclssjk6mq6rh8vt5eeo4@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007913128158\"",
+   "id": "d5p34gesgdtidknerc1cio66j4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZDVwMzRnZXNnZHRpZGtuZXJjMWNpbzY2ajQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:24:10.000Z",
+   "updated": "2025-07-08T19:45:56.564Z",
+   "summary": "COD Series:  The Elixir of Love",
+   "description": "BJU’s renowned Opera Association will present The Elixir of Love by Donzetti. An unobtainable lady, a hopelessly lovestruck peasant, and a sweet-talking con man are the key ingredients in this comic opera (to be performed in English).",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-05T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-05T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "d5p34gesgdtidknerc1cio66j4@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876842756766\"",
+   "id": "p54ohtt89kq4ot4n0em4r80o1o",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cDU0b2h0dDg5a3E0b3Q0bjBlbTRyODBvMW8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:20:21.000Z",
+   "updated": "2025-05-28T13:20:21.378Z",
+   "summary": "COD Series: Pre-Show Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-07T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-07T18:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "p54ohtt89kq4ot4n0em4r80o1o@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504007931551262\"",
+   "id": "p13r05n1oflddium2hqfqnrmmc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cDEzcjA1bjFvZmxkZGl1bTJocWZxbnJtbWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:24:12.000Z",
+   "updated": "2025-07-08T19:46:05.775Z",
+   "summary": "COD Series:  The Elixir of Love",
+   "description": "BJU’s renowned Opera Association will present The Elixir of Love by Donzetti. An unobtainable lady, a hopelessly lovestruck peasant, and a sweet-talking con man are the key ingredients in this comic opera (to be performed in English).",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-07T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-07T19:30:00-05:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "p13r05n1oflddium2hqfqnrmmc@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496876962268158\"",
+   "id": "2nik7cp6fvqcpe8gfdgg6f7qrc",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Mm5pazdjcDZmdnFjcGU4Z2ZkZ2c2ZjdxcmMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:21:20.000Z",
+   "updated": "2025-05-28T13:21:21.134Z",
+   "summary": "Annual Theatre Contest Finals",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-10T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-10T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "2nik7cp6fvqcpe8gfdgg6f7qrc@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008004884798\"",
+   "id": "3r6ekqm2lhk73mm0k3mdgkia70",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M3I2ZWtxbTJsaGs3M21tMGszbWRna2lhNzAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:58.000Z",
+   "updated": "2025-07-08T19:46:42.442Z",
+   "summary": "Play: The Lion, the Witch, & the Wardrobe",
+   "description": "Adapted by Joseph Robinette from C.S Lewis’s classic story. Presented by the BJU Theatre department. Produced by special arrangement with Dramatic Publishing www.dramaticpublishing.com",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-12T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-12T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3r6ekqm2lhk73mm0k3mdgkia70@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864019456702\"",
+   "id": "bh8s9kukeng1rr7r98tt2islt0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Ymg4czlrdWtlbmcxcnI3cjk4dHQyaXNsdDAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:24:12.000Z",
+   "updated": "2025-09-03T20:40:09.728Z",
+   "summary": "Brass Choir ",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-13T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-13T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "bh8s9kukeng1rr7r98tt2islt0@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864049677854\"",
+   "id": "doe97hedn8uo3krc8frn3t59bs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZG9lOTdoZWRuOHVvM2tyYzhmcm4zdDU5YnMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:24:51.000Z",
+   "updated": "2025-09-03T20:40:24.838Z",
+   "summary": "Chamber Singers",
+   "description": "The Chamber Singers present their spring program, featuring songs about love and loss. ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-13T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-13T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "doe97hedn8uo3krc8frn3t59bs@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008016413406\"",
+   "id": "cn518o9r4cfiuekgdsh58lgqcg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Y241MThvOXI0Y2ZpdWVrZ2RzaDU4bGdxY2cgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:57.000Z",
+   "updated": "2025-07-08T19:46:48.206Z",
+   "summary": "Play: The Lion, the Witch, & the Wardrobe",
+   "description": "Adapted by Joseph Robinette from C.S Lewis’s classic story. Presented by the BJU Theatre department. Produced by special arrangement with Dramatic Publishing www.dramaticpublishing.com",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-13T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-13T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "cn518o9r4cfiuekgdsh58lgqcg@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3516433367324478\"",
+   "id": "c3m99h39fg6fgfs1h1nl1gs540",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YzNtOTloMzlmZzZmZ2ZzMWgxbmwxZ3M1NDAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-18T17:31:23.000Z",
+   "updated": "2025-09-18T17:31:23.662Z",
+   "summary": "Senior Piano Recital: Yilin Gao ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-14T13:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-14T13:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "c3m99h39fg6fgfs1h1nl1gs540@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3509328873418558\"",
+   "id": "704ogfl2b90bfgsncb4kq6fqc4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NzA0b2dmbDJiOTBiZmdzbmNiNGtxNmZxYzQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-08-08T14:47:16.000Z",
+   "updated": "2025-08-08T14:47:16.709Z",
+   "summary": "Harp Performance Recital: Lydia Scroggins ",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-14T15:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-14T15:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "704ogfl2b90bfgsncb4kq6fqc4@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008025475550\"",
+   "id": "el315sne3sqj55sjjtkscf1e9o",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZWwzMTVzbmUzc3FqNTVzamp0a3NjZjFlOW8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:23:22.000Z",
+   "updated": "2025-07-08T19:46:52.737Z",
+   "summary": "Play: The Lion, the Witch, & the Wardrobe",
+   "description": "Adapted by Joseph Robinette from C.S Lewis’s classic story. Presented by the BJU Theatre department. Produced by special arrangement with Dramatic Publishing www.dramaticpublishing.com",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-14T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-14T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "el315sne3sqj55sjjtkscf1e9o@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504010181926174\"",
+   "id": "krcpu33rkhnfcna72rcu2t9ae0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a3JjcHUzM3JraG5mY25hNzJyY3UydDlhZTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:25:50.000Z",
+   "updated": "2025-07-08T20:04:50.963Z",
+   "summary": "Play: The Lion, the Witch, & the Wardrobe",
+   "description": "Adapted by Joseph Robinette from C.S Lewis’s classic story. Presented by the BJU Theatre department. Produced by special arrangement with Dramatic Publishing www.dramaticpublishing.com",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-16T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-16T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "krcpu33rkhnfcna72rcu2t9ae0@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504010194807390\"",
+   "id": "funlao9kr29gflfpa8rnr3oq00",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZnVubGFvOWtyMjlnZmxmcGE4cm5yM29xMDAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:26:18.000Z",
+   "updated": "2025-07-08T20:04:57.403Z",
+   "summary": "Play: The Lion, the Witch, & the Wardrobe",
+   "description": "Adapted by Joseph Robinette from C.S Lewis’s classic story. Presented by the BJU Theatre department. Produced by special arrangement with Dramatic Publishing www.dramaticpublishing.com",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-17T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-17T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "funlao9kr29gflfpa8rnr3oq00@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008153188798\"",
+   "id": "3m7usmmpf0hh9vhrbeq46goen0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=M203dXNtbXBmMGhoOXZocmJlcTQ2Z29lbjAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:27:14.000Z",
+   "updated": "2025-07-08T19:47:56.594Z",
+   "summary": "Woodwind Ensembles",
+   "description": "This eclectic chamber music program is presented by student ensembles under the guidance of the Woodwind faculty.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-18T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-18T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "3m7usmmpf0hh9vhrbeq46goen0@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341378054878\"",
+   "id": "gca7al8g61kb80i5eqouvom81k",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Z2NhN2FsOGc2MWtiODBpNWVxb3V2b204MWsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:56.000Z",
+   "updated": "2025-05-13T21:11:29.027Z",
+   "summary": "Student eTickets Begin: Living Gallery",
+   "description": "Students secure tickets online for event.",
+   "location": "Programs & Productions",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2026-03-31"
+   },
+   "end": {
+    "date": "2026-04-01"
+   },
+   "iCalUID": "gca7al8g61kb80i5eqouvom81k@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496877811474750\"",
+   "id": "l1q4ftqm44e37311od5rfu5450",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bDFxNGZ0cW00NGUzNzMxMW9kNXJmdTU0NTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:28:08.000Z",
+   "updated": "2025-05-28T13:28:25.737Z",
+   "summary": "A+D Studio Art Exhibition Opening",
+   "description": "(Displayed March 31 – April 24)",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-03-31T18:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-03-31T18:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "l1q4ftqm44e37311od5rfu5450@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008587442526\"",
+   "id": "5npjne27dgm3l2akjqpfgho4rs",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NW5wam5lMjdkZ20zbDJha2pxcGZnaG80cnMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:57.000Z",
+   "updated": "2025-07-08T19:51:33.721Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-02T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-02T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "5npjne27dgm3l2akjqpfgho4rs@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008599481790\"",
+   "id": "b12nn1un1q7jtnba72c8gagl24",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YjEybm4xdW4xcTdqdG5iYTcyYzhnYWdsMjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:59.000Z",
+   "updated": "2025-07-08T19:51:39.740Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-02T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-02T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "b12nn1un1q7jtnba72c8gagl24@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008610383582\"",
+   "id": "pja27u9nduu8auj8iepr6vms1c",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=cGphMjd1OW5kdXU4YXVqOGllcHI2dm1zMWMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:59.000Z",
+   "updated": "2025-07-08T19:51:45.191Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-03T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-03T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "pja27u9nduu8auj8iepr6vms1c@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008892317278\"",
+   "id": "4ibtd46cicm6juqftmjha3h2u0",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NGlidGQ0NmNpY202anVxZnRtamhhM2gydTAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:29:03.000Z",
+   "updated": "2025-07-08T19:54:06.158Z",
+   "summary": "Percussion Ensemble",
+   "description": "Come enjoy the inspiring sounds of the University's Percussion Ensemble under the direction of David Townsend.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-03T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-03T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "4ibtd46cicm6juqftmjha3h2u0@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008620868030\"",
+   "id": "dim36limn82g2njlt43k34th4c",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZGltMzZsaW1uODJnMm5qbHQ0M2szNHRoNGMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:29:00.000Z",
+   "updated": "2025-07-08T19:51:50.434Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-03T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-03T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "dim36limn82g2njlt43k34th4c@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008845815294\"",
+   "id": "a9s4bo6785gp2od0oo7ltbm9no",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YTlzNGJvNjc4NWdwMm9kMG9vN2x0Ym05bm8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-07-08T19:53:25.000Z",
+   "updated": "2025-07-08T19:53:42.907Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-04T14:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-04T14:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "a9s4bo6785gp2od0oo7ltbm9no@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008633236926\"",
+   "id": "gtbqlhrq7lmn3se3nssri16gh8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Z3RicWxocnE3bG1uM3NlM25zc3JpMTZnaDggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:29:01.000Z",
+   "updated": "2025-07-08T19:51:56.618Z",
+   "summary": "Concert, Opera & Drama Series:   Living Gallery-Behold Your King",
+   "description": "What may it cost us to claim Christ as our King? What may we gain if we do? Our annual Easter program combines original drama, music and breathtaking portrayals of classic works of art to celebrate the story of Jesus.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-04T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-04T16:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "gtbqlhrq7lmn3se3nssri16gh8@google.com",
+   "sequence": 5,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341520230366\"",
+   "id": "bl3vusht1eibrt34ik04gohvlo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YmwzdnVzaHQxZWlicnQzNGlrMDRnb2h2bG8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:06:00.000Z",
+   "updated": "2025-05-13T21:12:40.115Z",
+   "summary": "Student COD Series eTickets Begin: The Comedy of Errors",
+   "description": "Students secure tickets online for event.",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2026-04-06"
+   },
+   "end": {
+    "date": "2026-04-07"
+   },
+   "iCalUID": "bl3vusht1eibrt34ik04gohvlo@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504012838995262\"",
+   "id": "4rtijabdeltgk12m4k5s24dvoo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NHJ0aWphYmRlbHRnazEybTRrNXMyNGR2b28gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:31:14.000Z",
+   "updated": "2025-07-08T20:26:59.497Z",
+   "summary": "Concert Choir",
+   "description": "Join the Concert Choir under the direction of Laura Brundage for Celebration in Song, an uplifting evening of choral music that celebrates the beauty, depth, and vitality of the human voice. Celebration in Song showcases a diverse selection of works spanning sacred texts, lyrical poetry, and contemporary choral artistry. With rich harmonies and expressive storytelling, this program invites audiences to reflect, rejoice, and be inspired through the power of song.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-10T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-10T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "4rtijabdeltgk12m4k5s24dvoo@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504010060181374\"",
+   "id": "56uhi2a50mvu1hul2mp111gj8s",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NTZ1aGkyYTUwbXZ1MWh1bDJtcDExMWdqOHMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:31:55.000Z",
+   "updated": "2025-07-08T20:03:50.090Z",
+   "summary": "String Chamber Recitals",
+   "description": "The Department of Instrumental Studies presents its string majors in chamber ensembles, featuring a variety of composers and group instrumentations – including string quartets, quintets, and piano trios.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-11T15:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-11T15:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "56uhi2a50mvu1hul2mp111gj8s@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496878435158078\"",
+   "id": "4pjc0ed2n6esrekri4v8kipins",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NHBqYzBlZDJuNmVzcmVrcmk0djhraXBpbnMgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:33:03.000Z",
+   "updated": "2025-05-28T13:33:37.579Z",
+   "summary": "AACS Theatre Department Showcase",
+   "location": "Performance Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-15T20:45:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-15T20:45:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "4pjc0ed2n6esrekri4v8kipins@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Theatre; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494337037586206\"",
+   "id": "e3qo7ecsbiepjj4i56vepl38pg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZTNxbzdlY3NiaWVwamo0aTU2dmVwbDM4cGcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:28:56.000Z",
+   "updated": "2025-05-13T20:35:18.793Z",
+   "summary": "AACS Kaleidoscope Concert",
+   "description": "An exciting, fast-moving concert featuring student soloists and ensembles from the Division of Music at BJU.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-15T20:45:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-15T20:45:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "e3qo7ecsbiepjj4i56vepl38pg@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008449253470\"",
+   "id": "frkas7eqc54e01g3kvs4l8makg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZnJrYXM3ZXFjNTRlMDFnM2t2czRsOG1ha2cgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:34:25.000Z",
+   "updated": "2025-07-08T19:50:24.626Z",
+   "summary": "University Singers",
+   "description": "University Singers, BJU’s vibrant freshman choir, present an evening of new and familiar music that will cheer your spirit and warm your heart.  With beauty and passion, they sing of faith and life.  ",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-17T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-17T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "frkas7eqc54e01g3kvs4l8makg@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864167725118\"",
+   "id": "srif2eo1n8r2bc31h6u7g47q1g",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=c3JpZjJlbzFuOHIyYmMzMWg2dTdnNDdxMWcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-09-03T20:41:23.000Z",
+   "updated": "2025-09-03T20:41:23.862Z",
+   "summary": "Rivertree Singers Ensemble in Residence",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-18T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-18T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "srif2eo1n8r2bc31h6u7g47q1g@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864207355518\"",
+   "id": "tqvkh0ljcc529fa02h2unldapg",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dHF2a2gwbGpjYzUyOWZhMDJoMnVubGRhcGcgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:35:05.000Z",
+   "updated": "2025-09-03T20:41:43.677Z",
+   "summary": "Guitar Studio Recital",
+   "description": "The guitar studio of Dr. Isaac Greene will present a variety of solo and ensemble works from the guitar repertoire.",
+   "location": "Fine Arts Center",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-20T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-20T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "tqvkh0ljcc529fa02h2unldapg@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "224",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504008994255710\"",
+   "id": "n8hp0g7so0j4bc5k6tor1asslk",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bjhocDBnN3NvMGo0YmM1azZ0b3IxYXNzbGsgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:14:18.000Z",
+   "updated": "2025-07-08T19:54:57.127Z",
+   "summary": "Educational Performance: The Comedy of Errors",
+   "description": "Intended for students age 12+ and their primary educators. Contact Programs & Productions to secure tickets, (864) 770-1372 or in person.  \r\n\r\nOnline ticketing is not available.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-22T10:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-22T10:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "n8hp0g7so0j4bc5k6tor1asslk@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496878783132222\"",
+   "id": "s36a8pkhrsfk1tjuf1q89c76jo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=czM2YThwa2hyc2ZrMXRqdWYxcTg5Yzc2am8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:36:31.000Z",
+   "updated": "2025-05-28T13:36:31.566Z",
+   "summary": "COD Series: Pre-Show Talk",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-23T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-23T18:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "s36a8pkhrsfk1tjuf1q89c76jo@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864250955582\"",
+   "id": "chc302ajhr62h93mrnfr14dtlo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=Y2hjMzAyYWpocjYyaDkzbXJuZnIxNGR0bG8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:35:44.000Z",
+   "updated": "2025-09-03T20:42:05.477Z",
+   "summary": "University Symphonic Wind Band",
+   "description": "Folk Songs-Every nation's songs speak of its culture and geography. The Symphonic Wind Band presents some of these best settings with music by Gould, Chance, and Holst.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-23T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-23T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "chc302ajhr62h93mrnfr14dtlo@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009043611198\"",
+   "id": "af70f5esjha0e9ap5k7ln5g4t4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YWY3MGY1ZXNqaGEwZTlhcDVrN2xuNWc0dDQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:00:54.000Z",
+   "updated": "2025-07-08T19:55:21.805Z",
+   "summary": "COD Series: The Comedy of Errors",
+   "description": "Mistaken identities wreak havoc in this Shakespeare comedy. When a young man of means and his quirky sidekick both search for their long-lost twins, they unwittingly embark on a convoluted quest that turns the city upside down. Presented by BJU’s Classic Players.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-23T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-23T20:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "af70f5esjha0e9ap5k7ln5g4t4@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009052883358\"",
+   "id": "aq76uoe6g19b3568hu5vo35av4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YXE3NnVvZTZnMTliMzU2OGh1NXZvMzVhdjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:01:10.000Z",
+   "updated": "2025-07-08T19:55:26.441Z",
+   "summary": "COD Series: The Comedy of Errors",
+   "description": "Mistaken identities wreak havoc in this Shakespeare comedy. When a young man of means and his quirky sidekick both search for their long-lost twins, they unwittingly embark on a convoluted quest that turns the city upside down. Presented by BJU’s Classic Players.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-24T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-24T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "aq76uoe6g19b3568hu5vo35av4@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009063220510\"",
+   "id": "li6nvrj5693q9eq7bgllvpibk8",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bGk2bnZyajU2OTNxOWVxN2JnbGx2cGliazggbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:01:41.000Z",
+   "updated": "2025-07-08T19:55:31.610Z",
+   "summary": "COD Series: The Comedy of Errors",
+   "description": "Mistaken identities wreak havoc in this Shakespeare comedy. When a young man of means and his quirky sidekick both search for their long-lost twins, they unwittingly embark on a convoluted quest that turns the city upside down. Presented by BJU’s Classic Players.",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-25T14:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-25T14:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "li6nvrj5693q9eq7bgllvpibk8@google.com",
+   "sequence": 3,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "room": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "tags": "Concert, Opera & Drama Series; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864305686750\"",
+   "id": "jk0i6i4as0p7m1j61a6hp3snd4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=amswaTZpNGFzMHA3bTFqNjFhNmhwM3NuZDQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:37:54.000Z",
+   "updated": "2025-09-03T20:42:32.843Z",
+   "summary": "Chorale",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-25T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-25T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "jk0i6i4as0p7m1j61a6hp3snd4@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3496879086530494\"",
+   "id": "9b6flbcs1u4sk12457as54fp54",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=OWI2ZmxiY3MxdTRzazEyNDU3YXM1NGZwNTQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:39:03.000Z",
+   "updated": "2025-05-28T13:39:03.265Z",
+   "summary": "A+D Annual Juried Student Exhibition",
+   "description": "(Displayed April 28 – May 8)",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "date": "2026-04-28"
+   },
+   "end": {
+    "date": "2026-04-29"
+   },
+   "iCalUID": "9b6flbcs1u4sk12457as54fp54@google.com",
+   "sequence": 0,
+   "extendedProperties": {
+    "shared": {
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009664710174\"",
+   "id": "u4gr4t23afmk87cppllbfggdf4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=dTRncjR0MjNhZm1rODdjcHBsbGJmZ2dkZjQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:29:02.000Z",
+   "updated": "2025-07-08T20:00:32.355Z",
+   "summary": "Annual Art + Design Juried Student Exhibition",
+   "description": "Come see our students creativity in this annual juried competition of art, design, and photography. \r\n\r\nThis exhibition will be on display Monday-Saturday, 8 a.m.–10 p.m., April 29–May 8.",
+   "location": "Sargent Art Building",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-28T08:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-28T08:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "u4gr4t23afmk87cppllbfggdf4@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "room": "Exhibition Corridor",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "tags": "Art Exhibit; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009171829790\"",
+   "id": "br4pvaq1lnkqo9jgui75l11d80",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YnI0cHZhcTFsbmtxbzlqZ3VpNzVsMTFkODAgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:40:13.000Z",
+   "updated": "2025-07-08T19:56:25.914Z",
+   "summary": "Annual Music Contest Showcase",
+   "description": "Open music contests are held each year among university students. The winners in each contest showcase their pieces in this public performance.",
+   "location": "War Memorial Chapel",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-28T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-28T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "br4pvaq1lnkqo9jgui75l11d80@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "url": "https://www.bju.edu/events/calendar/fine-arts.php",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3513864341360190\"",
+   "id": "btl22iju8att1vodm82l5g1tdo",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=YnRsMjJpanU4YXR0MXZvZG04Mmw1ZzF0ZG8gbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-28T13:41:00.000Z",
+   "updated": "2025-09-03T20:42:50.680Z",
+   "summary": "University Symphony Orchestra with Richard Kaufman",
+   "description": "GRAMMY award-winning conductor Richard Kaufman joins BJUSO conductor Michael Moore on a symphonic tour of \"America the Beautiful\" featuring the music of Dvorak, Copland, John Williams, and Gershwin's Rhapsody in Blue. \r\n",
+   "location": "Rodeheaver Auditorium",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-04-30T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-04-30T19:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "btl22iju8att1vodm82l5g1tdo@google.com",
+   "sequence": 4,
+   "extendedProperties": {
+    "shared": {
+     "roll": "",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": "Concert; "
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3494341621112574\"",
+   "id": "mlttmb2v2i05qrq3t5m29qcus4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=bWx0dG1iMnYyaTA1cXJxM3Q1bTI5cWN1czQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T20:31:45.000Z",
+   "updated": "2025-05-13T21:13:30.556Z",
+   "summary": "Cinema Senior Film Premiere",
+   "description": "This is an evening of celebration as we premiere the capstone short films for this year’s graduating Film & Digital Storytelling seniors.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-05-01T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-05-01T19:00:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "mlttmb2v2i05qrq3t5m29qcus4@google.com",
+   "sequence": 2,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "Showpass Ticketing",
+     "short_title": "",
+     "url": "https://www.showpass.com/o/bjutickets/",
+     "room": "",
+     "tags": ""
+    }
+   },
+   "eventType": "default"
+  },
+  {
+   "kind": "calendar#event",
+   "etag": "\"3504009481953118\"",
+   "id": "do8q2alvflc7qv4qrcvcomoad4",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=ZG84cTJhbHZmbGM3cXY0cXJjdmNvbW9hZDQgbHU0ZmJxb3Mza28xbjAxZDNicmtmMmM4bHNAZw",
+   "created": "2025-05-13T21:04:03.000Z",
+   "updated": "2025-07-08T19:59:00.976Z",
+   "summary": "Student Composition Recital",
+   "description": "The University family is invited to hear this recital of music composition students’ best original works.",
+   "location": "Stratton Hall",
+   "creator": {
+    "email": "bjuwebmaster@gmail.com"
+   },
+   "organizer": {
+    "email": "lu4fbqos3ko1n01d3brkf2c8ls@group.calendar.google.com",
+    "displayName": "Fine Arts",
+    "self": true
+   },
+   "start": {
+    "dateTime": "2026-05-05T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "end": {
+    "dateTime": "2026-05-05T17:30:00-04:00",
+    "timeZone": "America/New_York"
+   },
+   "iCalUID": "do8q2alvflc7qv4qrcvcomoad4@google.com",
+   "sequence": 1,
+   "extendedProperties": {
+    "shared": {
+     "roll": "true",
+     "url_text": "",
+     "short_title": "",
+     "room": "",
+     "url": "",
+     "tags": "Recital; "
+    }
+   },
+   "eventType": "default"
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Pamphlet Maker{% endblock %}
+
+{% block content %}
+
+<form method="get">
+    <label for="progPicker">Choose Event:</label>
+    <select name="progPicker" id="progPicker" onchange="this.form.submit()">
+        <option value="">-- Select an event --</option>
+        {% for event in events %}
+            <option value="{{ event.id }}" {% if selectedEvent and selectedEvent.id == event.id %}selected{% endif %}>
+                {{ event.name }}
+            </option>
+        {% endfor %}
+    </select>
+</form>
+
+
+
+{% if selectedEvent %}
+    <form id="myForm" method="post" style="margin-top:20px;">
+        {% csrf_token %}
+        <input type="hidden" name="progPicker" value="{{ selectedEvent.id }}">
+
+        <label for="editor">Pamphlet</label><br>
+
+        <div id="toolbar" style="display:flex; justify-content:center; gap:5px; margin-bottom:5px;">
+            <select class="ql-font" style="margin-top:4px;">
+                <option selected></option>
+                <option value="serif"></option>
+                <option value="monospace"></option>
+            </select>
+            <select class="ql-size" style="margin-top:4px;">
+                <option value="small"></option>
+                <option selected></option>
+                <option value="large"></option>
+                <option value="huge"></option>
+            </select>
+            <button class="ql-bold"></button>
+            <button class="ql-italic"></button>
+            <button class="ql-underline"></button>
+            <select class="ql-color" style="margin-top:4px;"></select>
+            <select class="ql-background" style="margin-top:4px;"></select>
+            <button id="page-break-btn" type="button" title="Insert Page Break">PB</button>
+            <select class="ql-align" style="margin-top:4px;">
+                <option selected></option>
+                <option value="center"></option>
+                <option value="right"></option>
+                <option value="justify"></option>
+            </select>
+            <button class="ql-list" value="ordered"></button>
+            <button class="ql-list" value="bullet"></button>
+        </div>
+
+        <div style="text-align:center; margin-top:10px;">
+            <div id="editor" style="height:500px; width:800px; border:1px solid #ccc; margin:0 auto;"></div>
+        </div>
+
+        {% if pamphletContent %}
+            <div id="pamphlet-content" style="display:none;">{{ pamphletContent|safe }}</div>
+        {% endif %}
+
+        <input type="hidden" name="pamphlet" id="pamphlet">
+        <br>
+        <button type="submit">Submit</button>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="resetAll" onclick="return confirmReset()">Auto Generate</button>
+        </form>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="pdfconvert">Download PDF</button>
+        </form>
+    </form>
+
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: { toolbar: '#toolbar' }
+        });
+
+        var savedDiv = document.getElementById('pamphlet-content');
+        if (savedDiv) {
+            quill.root.innerHTML = savedDiv.innerHTML;
+        }
+
+        var form = document.getElementById('myForm');
+        if (form) {
+            form.addEventListener('submit', function() {
+                document.getElementById('pamphlet').value = quill.root.innerHTML;
+            });
+        }
+
+        var pageBreakBtn = document.getElementById('page-break-btn');
+        pageBreakBtn.addEventListener('click', function() {
+            let range = quill.getSelection(true);
+            if (range) {
+                quill.insertText(range.index, '[PAGE_BREAK]\n');
+                quill.setSelection(range.index + '[PAGE_BREAK]\n'.length, 0);
+            }
+        });
+
+        function confirmReset() {
+            return confirm("Are you sure you want to reset all pamphlets? This cannot be undone.");
+        }
+    </script>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h2>Here is your Auto-Generated Email</h2>
+<!-- Textbox -->
+<textarea id="pamphletText" rows="15" cols="80">
+Hey BJU Students and Fine Art Fans,
+We've got some great content coming up so here's just a quick overview.
+{% if events %}
+{% for event in events %}
+- {{ event.name }} ({{ event.startDate|date:"M d, Y" }} | {{ event.location }})
+    - {{ event.summary }}
+{% endfor %}
+{% endif %}
+That's all for this month. Stay tuned for updates!
+</textarea>
+<br><br>
+
+<!-- Copy Button -->
+<button onclick="copyText()">Copy Text</button>
+
+<!-- JavaScript to copy -->
+<script>
+function copyText() {
+    const textarea = document.getElementById('pamphletText');
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+    navigator.clipboard.writeText(textarea.value)
+        .then(() => alert("Text copied to clipboard!"))
+        .catch(err => alert("Failed to copy text: " + err));
+}
+</script>
+{% endblock %}

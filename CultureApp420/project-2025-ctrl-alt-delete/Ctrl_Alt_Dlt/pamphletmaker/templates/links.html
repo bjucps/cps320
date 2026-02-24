@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h2>Here Are Some Helpful Links</h2>
+    <br>
+    <br>
+
+{% for i in Links %}
+    <button onclick="document.location='{{i.0}}'">{{ i.1 }}</button>
+    <br>
+{% endfor %}
+
+{% endblock %}
