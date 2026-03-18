@@ -1,0 +1,9 @@
+const assets = 'assets';
+const envFile = '.env';
+const envEncrypted = '.env.aes';
+const emptyString = '';
+const password = "SUPER SECRET PASSWORD 2026!® Do not store this so clearly";
+const storageKey = "envVariable";
+const encryptedAt = "encrypted at";
+const title = "Encryption and Storage";
+const prompt = "Tap the padlock";
