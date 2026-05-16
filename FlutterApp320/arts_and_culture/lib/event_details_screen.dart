@@ -23,6 +23,9 @@ class _EventDetailsScreenState extends State<EventDetailsScreen> {
   }
 
   Widget _infoRow(IconData icon, String label, String value) {
+    if (value.isEmpty) {
+      return SizedBox.shrink();
+    }
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(
@@ -141,6 +144,7 @@ class _EventDetailsScreenState extends State<EventDetailsScreen> {
                         "Location",
                         event.eventLocation,
                       ),
+                      _infoRow(Icons.description, "Description", event.eventDescription)
                     ],
                   ),
                 ),

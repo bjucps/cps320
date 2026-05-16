@@ -7,6 +7,7 @@ class Event {
   final String eventDate;
   final String eventTime;
   final String eventLocation;
+  final String eventDescription;
   final List<int> eventPamphlets;
   final bool muRequired;
   final bool useUploadedPamphlet;
@@ -20,6 +21,7 @@ class Event {
     required this.eventDate,
     required this.eventTime,
     required this.eventLocation,
+    required this.eventDescription,
     required this.eventPamphlets,
     required this.muRequired,
     required this.useUploadedPamphlet,
@@ -60,6 +62,7 @@ class Event {
       eventDate: json['event_date'] ?? "",
       eventTime: json['event_time'] ?? "",
       eventLocation: json['event_location'] ?? "",
+      eventDescription: json['event_description'] ?? "",
       eventPamphlets: (json['pamphlets'] is List)
           ? (json['pamphlets'] as List).whereType<int>().toList()
           : [],
@@ -83,6 +86,7 @@ class Event {
     'event_date': eventDate,
     'event_time': eventTime,
     'event_location': eventLocation,
+    'event_description': eventDescription,
     'event_pamphlets': eventPamphlets,
     'mu_required': muRequired,
     'use_uploaded_pamphlet': useUploadedPamphlet,
